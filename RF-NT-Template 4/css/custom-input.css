@@ -1,0 +1,25 @@
+.custom-input {
+    border-radius: 4px;
+    border: 1px solid #DEDEDE;
+    padding: 8px 20px;
+    background-color: #F5F6F8;
+    font-size: 18px;
+    color: #53595F;
+}
+
+.custom-input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-input.error {
+    border-color: red;
+}
+
+.custom-input::placeholder {
+    color: #A3A3A3;
+    font-family: 'NT', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
