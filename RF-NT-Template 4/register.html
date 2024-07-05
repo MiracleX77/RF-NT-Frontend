@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <!-- Desktop Banner -->
+            <div class="col-md-3 d-none d-md-block" id="left-banner">
+                <img src="img/icon.png" alt="Icon" class="icon-top-left">
+                <img src="img/banner.png" alt="Banner Image" class="img-fluid w-100 h-100">
+            </div>
+
+            <!-- Mobile Banner -->
+            <div class="d-block d-md-none w-100" id="mobile-banner">
+                <div class="banner-content">
+                    <img src="img/icon.png" alt="Icon" class="icon-top-left-mobile">
+                    <div class="custom-dropdown language-dropdown col-5">
+                        <button class="btn btn-light custom-dropdown-toggle" type="button" id="languageDropdown">
+                            <img class="mr-2" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
+                            <span class="dropdown-arrow">&#9662;</span>
+                        </button>
+                        <div class="custom-dropdown-menu" id="languageDropdownMenu">
+                            <a class="dropdown-item" href="#" data-value="ไทย" data-flag="img/flag-th.png"><img src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย</a>
+                            <a class="dropdown-item" href="#" data-value="English" data-flag="img/flag-us.png"><img src="img/flag-us.png" alt="US Flag" width="20" height="15"> English</a>
+                            <a class="dropdown-item" href="#" data-value="日本語" data-flag="img/flag-jp.png"><img src="img/flag-jp.png" alt="Japan Flag" width="20" height="15"> 日本語</a>
+                            <a class="dropdown-item" href="#" data-value="한국어" data-flag="img/flag-kr.png"><img src="img/flag-kr.png" alt="Korea Flag" width="20" height="15"> 한국어</a>
+                            <a class="dropdown-item" href="#" data-value="中国的" data-flag="img/flag-cn.png"><img src="img/flag-cn.png" alt="China Flag" width="20" height="15"> 中国的</a>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/banner.png" alt="Banner Image" class="img-fluid w-100">
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col-md-9 px-4" id="main-content">
+                <div class="d-flex justify-content-end p-3 d-none d-md-flex">
+                    <div class="custom-dropdown language-dropdown col-2">
+                        <button class="btn btn-light custom-dropdown-toggle" type="button" id="languageDropdown">
+                            <img class="mr-2" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
+                            <span class="dropdown-arrow">&#9662;</span>
+                        </button>
+                        <div class="custom-dropdown-menu" id="languageDropdownMenu">
+                            <a class="dropdown-item" href="#" data-value="ไทย" data-flag="img/flag-th.png"><img src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย</a>
+                            <a class="dropdown-item" href="#" data-value="English" data-flag="img/flag-us.png"><img src="img/flag-us.png" alt="US Flag" width="20" height="15"> English</a>
+                            <a class="dropdown-item" href="#" data-value="日本語" data-flag="img/flag-jp.png"><img src="img/flag-jp.png" alt="Japan Flag" width="20" height="15"> 日本語</a>
+                            <a class="dropdown-item" href="#" data-value="한국어" data-flag="img/flag-kr.png"><img src="img/flag-kr.png" alt="Korea Flag" width="20" height="15"> 한국어</a>
+                            <a class="dropdown-item" href="#" data-value="中国的" data-flag="img/flag-cn.png"><img src="img/flag-cn.png" alt="China Flag" width="20" height="15"> 中国的</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promo my-3 text-center">
+                    <img src="img/promo.png" alt="Promotion Banner" class="img-fluid">
+                </div>
+                <h1 class="my-4 text-center font-weight-bold" style="color: #665AE1;">ลงทะเบียน</h1>
+                <form class="pb-5">
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-3">
+                            <label for="titleDropdown">คำนำหน้าชื่อ</label>
+                            <div class="custom-dropdown">
+                                <button class="btn btn-secondary custom-dropdown-toggle" type="button" id="titleDropdown">
+                                    กรุณาเลือก
+                                    <span class="dropdown-arrow">&#9662;</span>
+                                </button>
+                                <div class="custom-dropdown-menu" id="titleDropdownMenu">
+                                    <input type="text" class="form-control custom-dropdown-search" placeholder="Search" id="dropdownSearch2" onkeyup="filterFunction2(event)">
+                                    <a class="dropdown-item" href="#">Option 1</a>
+                                    <a class="dropdown-item disabled" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                    <a class="dropdown-item" href="#">Option 4</a>
+                                    <a class="dropdown-item" href="#">Option 5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-12 col-md-3">
+                            <label for="genderDropdown">เพศ</label>
+                            <div class="custom-dropdown">
+                                <button class="btn btn-secondary custom-dropdown-toggle" type="button" id="genderDropdown">
+                                    กรุณาเลือก
+                                    <span class="dropdown-arrow">&#9662;</span>
+                                </button>
+                                <div class="custom-dropdown-menu" id="genderDropdownMenu">
+                                    <input type="text" class="form-control custom-dropdown-search" placeholder="Search" id="dropdownSearch3" onkeyup="filterFunction3(event)">
+                                    <a class="dropdown-item" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item disabled" href="#">Option 3</a>
+                                    <a class="dropdown-item" href="#">Option 4</a>
+                                    <a class="dropdown-item" href="#">Option 5</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="full-name">ชื่อ - นามสกุล</label>
+                            <input type="text" id="full-name" class="form-control custom-input" placeholder="ชื่อ - นามสกุล">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="id-number">เลขบัตรประจำตัวประชาชน</label>
+                            <input type="text" id="id-number" class="form-control custom-input" placeholder="เลขประจำตัวประชาชน 13 หลัก">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <label for="passport-number">เลขหนังสือเดินทาง</label>
+                            <input type="text" id="passport-number" class="form-control custom-input" placeholder="เลขหนังสือเดินทาง">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="birth-date">วัน/เดือน/ปี เกิด</label>
+                            <input type="date" id="birth-date" class="form-control custom-input">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <label for="email">อีเมล์</label>
+                            <input type="email" id="email" class="form-control custom-input" placeholder="Email@Email.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="provinceDropdown">จังหวัด</label>
+                            <div class="custom-dropdown">
+                                <button class="btn btn-secondary custom-dropdown-toggle" type="button" id="provinceDropdown">
+                                    กรุณาเลือก
+                                    <span class="dropdown-arrow">&#9662;</span>
+                                </button>
+                                <div class="custom-dropdown-menu" id="provinceDropdownMenu">
+                                    <input type="text" class="form-control custom-dropdown-search" placeholder="Search" id="dropdownSearch4" onkeyup="filterFunction4(event)">
+                                    <a class="dropdown-item" href="#">กรุงเทพมหานคร</a>
+                                    <a class="dropdown-item" href="#">เชียงใหม่</a>
+                                    <a class="dropdown-item disabled" href="#">ภูเก็ต</a>
+                                    <a class="dropdown-item" href="#">ขอนแก่น</a>
+                                    <a class="dropdown-item" href="#">ชลบุรี</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="phone">เบอร์มือถือ</label>
+                            <input type="text" id="phone" class="form-control custom-input" placeholder="085123XXXX">
+                        </div>
+                        <div class="form-group col-6 col-md-2 d-flex align-items-end">
+                            <button type="button" id="request-otp" class="btn btn-warning text-white w-100" style="background-color: #F4A022; border-color: #F4A022;">ขอรับหมายเลข OTP</button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="otp">ระบุรหัสผ่านที่ได้รับจาก SMS</label>
+                            <input type="text" id="otp" class="form-control custom-input" placeholder="หมายเลข OTP">
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="form-check d-flex align-items-center">
+                            <input type="checkbox" class="form-check-input" id="accept-terms">
+                            <label class="form-check-label ml-2" for="accept-terms" style="text-decoration: underline;">
+                                <a href="term.html" style="color: inherit; text-decoration: underline;">ยอมรับเงื่อนไขในการใช้บริการ</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center pt-3">
+                        <button type="submit" class="btn btn-primary col-12 col-md-3" style="background-color: #665AE1; border-color: #665AE1;">ลงทะเบียน</button>
+                    </div>
+                </form>
+                <div class="bottom-nav d-none d-md-flex">
+                    <a href="error.html" class="nav-item">
+                        <img src="img/check-usage.png" alt="ตรวจสอบยอดใช้งาน">
+                        <p>ตรวจสอบยอดใช้งาน</p>
+                    </a>
+                    <a href="howto.html" class="nav-item">
+                        <img src="img/usage-guide.png" alt="วิธีการใช้งาน">
+                        <p>วิธีการใช้งาน</p>
+                    </a>
+                    <a href="troubleshoot.html" class="nav-item">
+                        <img src="img/problem-solving.png" alt="การแก้ไขปัญหา">
+                        <p>การแก้ไขปัญหา</p>
+                    </a>
+                    <a href="error.html" class="nav-item">
+                        <img src="img/service-area.png" alt="พื้นที่ให้บริการ">
+                        <p>พื้นที่ให้บริการ</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav d-md-none">
+            <a href="error.html" class="nav-item col-3">
+                <img src="img/check-usage.png" alt="ตรวจสอบยอดใช้งาน">
+                <p>ตรวจสอบยอดใช้งาน</p>
+            </a>
+            <a href="howto.html" class="nav-item col-3">
+                <img src="img/usage-guide.png" alt="วิธีการใช้งาน">
+                <p>วิธีการใช้งาน</p>
+            </a>
+            <a href="troubleshoot.html" class="nav-item col-3">
+                <img src="img/problem-solving.png" alt="การแก้ไขปัญหา">
+                <p>การแก้ไขปัญหา</p>
+            </a>
+            <a href="error.html" class="nav-item col-3">
+                <img src="img/service-area.png" alt="พื้นที่ให้บริการ">
+                <p>พื้นที่ให้บริการ</p>
+            </a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
