@@ -278,7 +278,7 @@ hr {
         margin-left: 0;
         border-radius: 24px 24px 0 0;
         background-color: #fff;
-        margin-top: -50px; /* Overlap main content with banner */
+        margin-top: -65px; /* Overlap main content with banner */
         margin-bottom: 100px;
         height: auto;
     }
@@ -287,7 +287,7 @@ hr {
         margin-left: 0;
         border-radius: 24px 24px 0 0;
         background-color: #fff;
-        margin-top: -50px; /* Overlap main content with banner */
+        margin-top: -65px; /* Overlap main content with banner */
         height: auto;
     }
 
