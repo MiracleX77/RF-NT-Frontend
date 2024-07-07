@@ -98,6 +98,150 @@ label {
     font-size: 16px;
     color: #53595F;
 }
+.content-body {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 22px;
+    line-height: 0.9;
+    justify-content: center;
+    align-items: center;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-content {
+    width: 60%;
+    font-size: 22px;
+    line-height: 1.0;
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+}
+.btn-custom {
+    width: 100%;
+    margin: 5px;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn-custom-primary {
+    background-color: #ff9800;
+    color: white;
+    border: 1px solid #ff9800;
+    width: 100%;
+}
+
+.btn-custom-primary:hover {
+    background-color: #e68900;
+    border-color: #e68900;
+}
+
+.btn-custom-outline {
+    background-color: transparent;
+    color: #ff9800;
+    border: 1px solid #ff9800;
+    width: 100%;
+}
+
+.btn-custom-outline:hover {
+    background-color: #ff9800;
+    color: white;
+}
+
+.accordion .accordion-button {
+    text-align: left;
+    font-size: 22px;
+    width: 100%;
+    background-color: #ff9800;
+    color: white;
+    position: relative;
+}
+
+.accordion .accordion-button.collapsed {
+    background-color: transparent;
+    color: #ff9800;
+    border: 1px solid #ff9800;
+}
+
+.accordion .accordion-button.collapsed::after {
+    text-align: right;
+    content: '+';
+    font-size: 2rem;
+    color: #ff9800;
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+    text-align: right;
+    content: '-';
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.accordion .card {
+    border: 0 !important;
+}
+
+.card-header {
+    padding: 0 !important;
+    margin-bottom: 10px !important;
+}
+/* Accordion content  V2 */
+.accordion-button2 {
+    text-align: left;
+    font-size: 22px;
+    width: 100%;
+    background-color: transparent;
+    color: #ff9800;
+    position: relative;
+    border-bottom: 3px solid #ff9800; 
+}
+.accordion-button2.collapsed {
+    background-color: transparent;
+    color: #53595F;
+    border-bottom: 3px solid #53595F; 
+}
+
+
+.accordion-button2::after {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.accordion-button2.collapsed::after {
+    content: '+';
+    
+}
+
+
+.accordion-button2:not(.collapsed)::after {
+
+    content: '-';
+}
+
+hr {
+    border: 0;
+    border-top: 3px solid #ff9800;
+    margin: 20px 0;
+}
+
+
+
+
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
@@ -179,4 +323,36 @@ label {
     #main-content .language-dropdown {
         display: none;
     }
+
+    .content-body {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+        line-height: 1.2;
+    
+    }
+    .box-content {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.0;
+        text-align: left;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row-group {
+        width: 100%;
+    }
+
+    .card-header {
+        padding: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+
 }
+
