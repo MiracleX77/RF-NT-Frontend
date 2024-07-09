@@ -72,7 +72,7 @@
                     <div class="box-content">
                         <div class="row mb-4">
                             <div class="col-12 col-md-3 mb-2">
-                                <button type="button" class="btn btn-custom btn-custom-primary">ดีมาก</button>
+                                <button type="button" class="btn btn-custom btn-custom-outline">ดีมาก</button>
                             </div>
                             <div class="col-12 col-md-3 mb-2">
                                 <button type="button" class="btn btn-custom btn-custom-outline">ดี</button>
@@ -144,6 +144,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttons = document.querySelectorAll(".btn-custom-outline");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", function() {
+                    buttons.forEach(btn => btn.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

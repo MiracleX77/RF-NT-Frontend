@@ -169,6 +169,12 @@ label {
     color: white;
 }
 
+.btn-custom-outline.active {
+    background-color: #ff9800;
+    color: white;
+    border: 1px solid #ff9800;
+}
+
 .accordion .accordion-button {
     text-align: left;
     font-size: 22px;
