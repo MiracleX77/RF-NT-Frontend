@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'NT';
+    src: url('../fonts/NT Regular.otf') format('opentype'),
+         url('../fonts/NT Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NT';
+    src: url('../fonts/NT Bold.otf') format('opentype'),
+         url('../fonts/NT Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+html, body {
+    font-family: 'NT', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.promo, .promo2 {
+    margin-bottom: 20px;
+}
+
+.promo img, .promo2 img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+h1 {
+    color: #665AE1;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+label {
+    font-family: 'NT', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #53595F;
+}
+
+.icon-top-left {
+    width: '100%';
+    height: auto;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 2;
+}
+
+.bottom-nav .nav-button-group {
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-nav .nav-item {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.bottom-nav .nav-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.bottom-nav .nav-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #53595F;
+}
+
+.main-content-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    padding: 24px 100px;
+    margin: 0px auto;
+    max-width: 900px;
+}
+
+.promo2 {
+    flex-shrink: 0;
+    margin-left: 70%;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .promo img, .promo2 img {
+        width: 100%;
+    }
+
+    .bottom-nav {
+        flex-direction: column;
+        align-items: center; /* Center align for small screens */
+    }
+
+    .bottom-nav .nav-item {
+        width: 25%;
+        text-align: center;
+    }
+
+    .bottom-nav .nav-item p {
+        font-size: 12px;
+    }
+
+    .language-dropdown {
+        width: auto;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    #request-otp {
+        width: 100%; /* Full width for OTP button on mobile */
+    }
+
+    .main-content-card {
+        padding: 24px 20px;
+    }
+
+    .promo2 {
+        position: static;
+        margin-top: 20px;
+    }
+}
