@@ -1,19 +1,17 @@
 @font-face {
-    font-family: 'NT';
-    src: url('../fonts/NT Regular.otf') format('opentype'),
-         url('../fonts/NT Regular.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'IBM Plex Sans Thai';
+    src: url('../fonts/IBMPlexSansThai-Regular.ttf') format('truetype');
+    font-weight: 300;
 }
 
 @font-face {
-    font-family: 'NT';
-    src: url('../fonts/NT Bold.otf') format('opentype'),
-         url('../fonts/NT Bold.ttf') format('truetype');
-    font-weight: 700;
+    font-family: 'IBM Plex Sans Thai';
+    src: url('../fonts/IBMPlexSansThai-Bold.ttf') format('truetype');
+    font-weight: 600;
 }
 
 html, body {
-    font-family: 'NT', sans-serif;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -21,10 +19,21 @@ html, body {
     background-image: url('../img/background.png');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
 }
 
 .promo, .promo2 {
     margin-bottom: 20px;
+}
+
+.promo {
+    margin-top: -100px;
 }
 
 .promo img, .promo2 img {
@@ -40,15 +49,20 @@ h1 {
 }
 
 label {
-    font-family: 'NT', sans-serif;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #53595F;
 }
 
 .icon-top-left {
-    width: '100%';
     height: auto;
+}
+
+.language-dropdown .btn-light {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .bottom-nav {
@@ -83,7 +97,7 @@ label {
 
 .bottom-nav .nav-item p {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     color: #53595F;
 }
 
@@ -100,15 +114,41 @@ label {
     margin-left: 70%;
 }
 
+.promo2-mobile {
+    display: none;
+}
+
+#bottom-nav-mobile {
+    display: none;
+}
+
 /* Media queries for responsive design */
 @media (max-width: 768px) {
-    .promo img, .promo2 img {
+    .promo {
+        margin-top: 0px;
+    }
+
+    .promo img {
         width: 100%;
     }
 
+    .top-bar {
+        flex-direction: row;
+    }
+
+    .language-dropdown {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .bottom-nav {
+        margin-top: 10px;
+        background-color: #FCC353;
         flex-direction: column;
-        align-items: center; /* Center align for small screens */
+        align-items: center;
+        height: auto; /* Ensure full height background */
+        padding-bottom: 20px;
     }
 
     .bottom-nav .nav-item {
@@ -118,10 +158,6 @@ label {
 
     .bottom-nav .nav-item p {
         font-size: 12px;
-    }
-
-    .language-dropdown {
-        width: auto;
     }
 
     .form-row {
@@ -137,11 +173,20 @@ label {
     }
 
     .main-content-card {
+        width: 90%;
         padding: 24px 20px;
     }
 
-    .promo2 {
-        position: static;
+    .promo2 img{
+        height: 0;
+    }
+
+    .promo2-mobile {
+        display: block;
         margin-top: 20px;
+    }
+
+    #bottom-nav-mobile {
+        display: block;
     }
 }

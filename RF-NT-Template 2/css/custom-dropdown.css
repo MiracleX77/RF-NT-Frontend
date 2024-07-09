@@ -74,35 +74,53 @@
 /* Specific styles for the language dropdown */
 .language-dropdown {
     background-color: white;
-    border: 1px solid white;
+    border: none;
     border-radius: 25px;
 }
 
 .language-dropdown .custom-dropdown-toggle {
-    border: none;
+    border: 1px solid #D0D5DD;
     background-color: white;
     padding: 5px 10px;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
 }
 
 .language-dropdown .custom-dropdown-toggle img {
-    margin-right: 5px;
-}
-
-.language-dropdown .custom-dropdown-menu a:hover:not(.disabled) {
-    background-color: #D0D5DD;
-    color: white;
+    margin-right: 10px;
+    width: 20px;
+    height: 15px;
 }
 
 .language-dropdown .custom-dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #fff;
-    border-radius: 0px;
-    min-width: 100%;
-    box-shadow: 0px 20px 16px 0px rgba(0, 0, 0, 0.2);
-    margin-top: -20px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    max-height: none; /* Remove max-height */
     z-index: 1;
-    max-height: 200px;
-    overflow-y: auto;
+    margin-top: 5px;
+}
+
+.language-dropdown .custom-dropdown-menu a {
+    background-color: white;
+    border: 1px solid #D0D5DD;
+    padding: 10px 16px;
+    margin-top: 5px; /* Adds gap between choices */
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.language-dropdown .custom-dropdown-menu a:first-child {
+    margin-top: 0; /* Removes margin from the first item */
+}
+
+.language-dropdown .custom-dropdown-menu a:hover:not(.disabled) {
+    background-color: #D0D5DD;
+    color: white;
 }
