@@ -179,7 +179,7 @@ label {
 }
 
 .accordion .accordion-button.collapsed {
-    background-color: transparent;
+    background-color: #ffffff;
     color: #ff9800;
     border: 1px solid #ff9800;
 }
@@ -206,6 +206,15 @@ label {
     transform: translateY(-50%);
 }
 
+button.btn.btn-link.accordion-button:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+button.btn.btn-link.accordion-button:hover {
+    color: #212529;
+}
+
 .accordion .card {
     border: 0 !important;
 }
@@ -219,15 +228,15 @@ label {
     text-align: left;
     font-size: 22px;
     width: 100%;
-    background-color: transparent;
+    background-color: #ffffff;
     color: #ff9800;
     position: relative;
-    border-bottom: 3px solid #ff9800; 
+    border-bottom: 1px solid #ff9800; 
 }
 .accordion-button2.collapsed {
-    background-color: transparent;
+    background-color: #ffffff;
     color: #53595F;
-    border-bottom: 3px solid #53595F; 
+    border-bottom: 1px solid #53595F; 
 }
 
 
@@ -250,9 +259,18 @@ label {
     content: '-';
 }
 
+button.btn.btn-link.accordion-button2:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+button.btn.btn-link.accordion-button2:hover {
+    color: #212529;
+}
+
 hr {
     border: 0;
-    border-top: 3px solid #ff9800;
+    border-top: 1px solid #ff9800;
     margin: 20px 0;
 }
 
