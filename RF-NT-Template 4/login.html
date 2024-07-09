@@ -9,6 +9,42 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom-input.css">
     <link rel="stylesheet" href="css/custom-dropdown.css">
+    <style>
+        .button-extra {
+            height: 60px !important;
+        }
+
+        .custom-input-password {
+            position: relative;
+        }
+
+        .custom-input-password input {
+            width: 100%;
+            padding-right: 60px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 20px;
+            top: 72.5%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #665AE152;
+            /* Default color */
+            font-size: 18px;
+        }
+
+        .toggle-password:hover {
+            color: #665AE1;
+            /* Hover color */
+        }
+
+        @media (max-width: 768px) {
+            .button-extra {
+                padding: 1rem .75rem !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +53,8 @@
             <!-- Desktop Banner -->
             <div class="col-md-8 d-none d-md-block" id="left-banner-login">
                 <img src="img/icon.png" alt="Icon" class="icon-top-left">
-                <img src="img/banner-login.png" alt="Banner Image" class="img-fluid w-100 h-100"  style="object-fit: cover;">
+                <img src="img/banner-login.png" alt="Banner Image" class="img-fluid w-100 h-100"
+                    style="object-fit: cover;">
             </div>
 
             <!-- Mobile Banner -->
@@ -84,10 +121,11 @@
                                 <input type="text" id="username" class="form-control custom-input"
                                     placeholder="ชื่อผู้ใช้">
                             </div>
-                            <div class="form-group">
+                            <div class="form-group custom-input-password">
                                 <label for="password">รหัสผ่าน</label>
                                 <input type="password" id="password" class="form-control custom-input"
                                     placeholder="รหัสผ่าน">
+                                <span class="toggle-password" onclick="togglePassword()">Show</span>
                             </div>
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="rememberMe">
@@ -120,9 +158,19 @@
                         </div>
 
                         <!-- Additional Links -->
-                        <div class="d-flex justify-content-around w-100 mt-4">
-                            <a href="#" class="btn btn-light">ซื้อแพ็กเกจ WiFi</a>
-                            <a href="register.html" class="btn btn-light">ลงทะเบียน Free WiFi</a>
+                        <div class="d-flex flex-column flex-md-row justify-content-between w-100 mt-4 pr-md-2">
+                            <button type="button"
+                                class="btn btn-secondary button-extra col-12 col-md-6 d-flex align-items-center justify-content-center mb-2 mb-md-0 mr-md-1"
+                                style="background-color: #ffffff; border-color: #D0D5DD; color: #53595F;">
+                                <img src="img/shopping.png" alt="Logout Icon" style="width: 20px; margin-right: 10px;">
+                                ซื้อแพ็กเกจ WiFi
+                            </button>
+                            <button type="button"
+                                class="btn btn-secondary button-extra col-12 col-md-6 d-flex align-items-center justify-content-center mb-2 ml-md-1"
+                                style="background-color: #ffffff; border-color: #D0D5DD; color: #53595F;">
+                                <img src="img/wifi.png" alt="Logout Icon" style="width: 20px; margin-right: 10px;">
+                                ลงทะเบียน Free WiFi
+                            </button>
                         </div>
 
                         <div class="my-3 text-center">
@@ -157,6 +205,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const toggleText = document.querySelector('.toggle-password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleText.textContent = 'Hide';
+            } else {
+                passwordField.type = 'password';
+                toggleText.textContent = 'Show';
+            }
+        }
+    </script>
 </body>
 
 </html>
