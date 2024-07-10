@@ -132,7 +132,8 @@ label {
 
 .promo2 {
     flex-shrink: 0;
-    margin-left: 70%;
+    margin-left: auto;
+    padding-right: 1rem; /* Add padding from the right page border */
 }
 
 .promo2-mobile {
