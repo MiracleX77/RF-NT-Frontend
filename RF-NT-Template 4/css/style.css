@@ -91,7 +91,7 @@ label {
 
 .bottom-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-top: 1px solid #ccc;
   padding: 10px 0;
@@ -103,6 +103,7 @@ label {
 
 .bottom-nav .nav-item {
   text-align: center;
+  margin-inline: 10px;
 }
 
 .bottom-nav .nav-item img {
@@ -348,6 +349,7 @@ hr {
 
   .bottom-nav .nav-item {
     width: 25%;
+    margin-inline: 0px;
     text-align: center;
   }
 
