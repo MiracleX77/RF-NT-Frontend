@@ -144,6 +144,10 @@ label {
     display: none;
 }
 
+.button-extra {
+    height: 60px !important;
+}
+
 /* Media queries for responsive design */
 @media (max-width: 768px) {
     .promo {
@@ -227,5 +231,9 @@ label {
 
     .promo2-mobile img {
         width: 90%;
+    }
+
+    .button-extra {
+        padding: 1rem .75rem !important;
     }
 }
