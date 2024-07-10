@@ -308,6 +308,10 @@ hr {
   margin: 20px 0;
 }
 
+.button-extra {
+  height: 60px !important;
+}
+
 /* Media queries for responsive design */
 @media (max-width: 768px) {
   #left-banner {
@@ -443,5 +447,9 @@ hr {
   .card-header {
     padding: 0 !important;
     margin-bottom: 10px !important;
+  }
+
+  .button-extra {
+    padding: 1rem .75rem !important;
   }
 }
