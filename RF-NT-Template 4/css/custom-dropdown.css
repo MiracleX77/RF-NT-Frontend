@@ -68,17 +68,21 @@
 .language-dropdown {
     background-color: white;
     border: 1px solid #D0D5DD;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 40px;
+    padding: initial;
 }
 
 .language-dropdown .custom-dropdown-toggle {
     border: none;
     background-color: white;
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 .language-dropdown .custom-dropdown-toggle img {
     margin-right: 5px;
+}
+
+.language-dropdown .custom-dropdown-menu {
+    max-height: max-content;
 }

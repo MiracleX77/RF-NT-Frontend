@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 const dropdownButton = this.closest('.custom-dropdown').querySelector('.custom-dropdown-toggle');
                 const flag = this.getAttribute('data-flag');
                 const value = this.getAttribute('data-value');
-                dropdownButton.innerHTML = `<img class="mr-3" src="${flag}" alt="${value} Flag" width="20" height="15"> ${value} <span class="dropdown-arrow">&#9662;</span>`;
+                dropdownButton.innerHTML = `<img class="mr-2" src="${flag}" alt="${value} Flag" width="20" height="15"> ${value} <span class="dropdown-arrow">&#9662;</span>`;
                 closeAllDropdowns();
             }
         });

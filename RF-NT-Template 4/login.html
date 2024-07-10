@@ -88,7 +88,7 @@
                 <div class="justify-content-end p-3 d-none d-md-flex">
                     <div class="custom-dropdown language-dropdown col-4">
                         <button class="btn btn-light custom-dropdown-toggle" type="button" id="languageDropdown">
-                            <img class="mr-3" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
+                            <img class="mr-2" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
                             <span class="dropdown-arrow">&#9662;</span>
                         </button>
                         <div class="custom-dropdown-menu" id="languageDropdownMenu">
@@ -127,11 +127,14 @@
                                     placeholder="รหัสผ่าน">
                                 <span class="toggle-password" onclick="togglePassword()">Show</span>
                             </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="rememberMe">
-                                <label class="form-check-label" for="rememberMe">จดจำรหัสผ่าน</label>
+                            <div class="form-group form-check d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" class="form-check-input custom-checkbox" id="rememberMe">
+                                    <label class="form-check-label ml-2" for="rememberMe">จดจำรหัสผ่าน</label>
+                                </div>
                                 <a href="reset-password.html" class="float-right">ลืมรหัสผ่าน</a>
                             </div>
+                                                 
                             <button type="submit" class="btn btn-primary btn-block"
                                 style="height: 40px; background-color: #665AE1; border-color: #665AE1;">เข้าสู่ระบบ</button>
                             <button type="button"
@@ -162,13 +165,13 @@
                             <button type="button"
                                 class="btn btn-secondary button-extra col-12 col-md-6 d-flex align-items-center justify-content-center mb-2 mb-md-0 mr-md-1"
                                 style="background-color: #ffffff; border-color: #D0D5DD; color: #53595F;">
-                                <img src="img/shopping.png" alt="Logout Icon" style="width: 20px; margin-right: 10px;">
+                                <img src="img/shopping.png" alt="Logout Icon" style="width: 30px; margin-right: 10px;">
                                 ซื้อแพ็กเกจ WiFi
                             </button>
                             <button type="button"
                                 class="btn btn-secondary button-extra col-12 col-md-6 d-flex align-items-center justify-content-center ml-md-1"
                                 style="background-color: #ffffff; border-color: #D0D5DD; color: #53595F;">
-                                <img src="img/wifi.png" alt="Logout Icon" style="width: 20px; margin-right: 10px;">
+                                <img src="img/wifi.png" alt="Logout Icon" style="width: 30px; margin-right: 10px;">
                                 ลงทะเบียน Free WiFi
                             </button>
                         </div>

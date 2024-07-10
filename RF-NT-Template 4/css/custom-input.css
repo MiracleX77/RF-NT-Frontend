@@ -1,3 +1,15 @@
+.form-check {
+    font-size: 16px;
+}
+
+.form-check-label {
+    font-size: 16px;
+}
+
+.form-check-input {
+    margin-top: 0px;
+}
+
 .custom-input {
     border-radius: 4px;
     border: 1px solid #DEDEDE;
@@ -5,6 +17,7 @@
     background-color: #F5F6F8;
     font-size: 18px;
     color: #53595F;
+    height: 40px;
 }
 
 .custom-input:focus {
@@ -15,6 +28,7 @@
 
 .custom-input.error {
     border-color: red;
+    border-width: 1px;
 }
 
 .custom-input::placeholder {
@@ -22,4 +36,34 @@
     font-family: 'NT', sans-serif;
     font-size: 18px;
     font-weight: 400;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: #F5F6F8;
+    border-radius: 4px;
+    border: 1px solid #DEDEDE;
+    appearance: none; /* Remove default checkbox styling */
+    -webkit-appearance: none; /* Remove default checkbox styling for WebKit browsers */
+    outline: none; /* Remove default outline */
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-checkbox:checked {
+    background-color: #665AE1;
+    border-color: #665AE1;
+}
+
+.custom-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
