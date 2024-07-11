@@ -151,25 +151,25 @@ label {
 
 .btn-wrapper {
   width: 100%;
-  min-height: 40px !important;
+  max-height: 40px !important;
   height: 40px !important;
 }
 
 .btn {
   font-size: 20px;
-  min-height: 40px !important;
+  max-height: 40px !important;
   height: 40px !important;
 }
 
 .btn-primary,
 .btn-secondary {
-  min-height: 40px !important;
+  max-height: 40px !important;
   height: 40px !important;
 }
 
 .btn-custom {
   width: 100%;
-  min-height: 40px !important;
+  max-height: 40px !important;
   height: 40px;
   margin-bottom: 10px;
   padding: 10px 10px;
@@ -327,6 +327,7 @@ hr {
 }
 
 .button-extra {
+  min-height: 60px !important;
   height: 60px !important;
 }
 
