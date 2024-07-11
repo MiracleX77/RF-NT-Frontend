@@ -156,7 +156,7 @@ label {
 }
 
 .btn {
-  font-size: 16px;
+  font-size: 20px;
   min-height: 40px !important;
   height: 40px !important;
 }
@@ -381,7 +381,7 @@ hr {
   }
 
   .bottom-nav .nav-item p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .btn-wrapper {
