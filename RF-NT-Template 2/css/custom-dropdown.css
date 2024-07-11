@@ -137,23 +137,3 @@
   background-color: #d0d5dd;
   color: white;
 }
-
-.custom-dropdown-toggle .btn-secondary:not(:disabled):not(.disabled).active,
-.btn-secondary:not(:disabled):not(.disabled):active,
-.show > .btn-secondary.dropdown-toggle,
-.custom-dropdown-toggle .btn-secondary:not(:disabled):not(.disabled).active:hover,
-.btn-secondary:not(:disabled):not(.disabled):active:hover,
-.show > .btn-secondary.dropdown-toggle:hover,
-.custom-dropdown-toggle .btn-secondary:not(:disabled):not(.disabled).active:focus,
-.btn-secondary:not(:disabled):not(.disabled):active:focus,
-.show > .btn-secondary.dropdown-toggle:focus,
-.custom-dropdown-toggle .btn-secondary:not(:disabled):not(.disabled).active:focus:hover,
-.btn-secondary:not(:disabled):not(.disabled):active:focus:hover,
-.show > .btn-secondary.dropdown-toggle:focus:hover {
-    background-color: transparent;
-    color: #53595F;
-    border: 0px;
-    font-size: 18px;
-    text-align: left;
-    height: 60px !important;
-}
