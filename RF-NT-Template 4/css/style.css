@@ -41,6 +41,10 @@ h1 {
   font-weight: 700; /* Make it bold */
 }
 
+p {
+  color: #53595F;
+}
+
 label {
   font-family: "NT", sans-serif;
   font-size: 18px;
@@ -271,6 +275,7 @@ button.btn.btn-link.accordion-button:hover {
 }
 
 .card-body {
+  color: #53595F;
   padding: 0 !important;
   border-radius: 0 !important;
   margin-bottom: 20px !important;
