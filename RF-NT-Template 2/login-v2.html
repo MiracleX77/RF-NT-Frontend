@@ -50,21 +50,23 @@
             </div>
 
             <!-- Main Content Card -->
-            <div class="main-content-card-login1 mx-auto">
+            <div class="main-content-card-login2 mx-auto">
                 <!-- <h1 class="text-center font-weight-bold" style="color: #53595F;">เข้าสู่ระบบ</h1> -->
 
                 <!-- Form Content Start -->
-                <form onsubmit="return login(event)">
+                <form>
                     <div class="form-group">
                         <div class="position-relative">
                             <img src="img/user.png" alt="User Icon" class="custom-input-login-icon">
-                            <input type="text" id="username" class="form-control custom-input-login" placeholder="ชื่อผู้ใช้">
+                            <input type="text" id="username" class="form-control custom-input-login"
+                                placeholder="ชื่อผู้ใช้">
                         </div>
                     </div>
                     <div class="form-group custom-input-password">
                         <div class="position-relative">
                             <img src="img/passlock.png" alt="Password Icon" class="custom-input-login-icon">
-                            <input type="password" id="password" class="form-control custom-input-login" placeholder="รหัสผ่าน">
+                            <input type="password" id="password" class="form-control custom-input-login"
+                                placeholder="รหัสผ่าน">
                             <span class="toggle-password" onclick="togglePassword()">Show</span>
                         </div>
                     </div>
@@ -76,10 +78,10 @@
                         <a href="reset-password.html" class="float-right" style="color: #53595F;">ลืมรหัสผ่าน</a>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary col-12 col-md-6 mx-auto mb-3"
+                        <button type="submit" class="btn btn-primary col-12 mx-auto mb-3"
                             style="height: 40px; background-color: #FCC353; border-color: #FCC353;">เข้าสู่ระบบ</button>
                         <button type="button"
-                            class="btn btn-secondary col-12 col-md-6 mx-auto mb-2 d-flex align-items-center justify-content-center"
+                            class="btn btn-secondary col-12 mx-auto mb-2 d-flex align-items-center justify-content-center"
                             style="height: 40px; background-color: #030650; border-color: #030650;">
                             <img src="img/thaiID.png" alt="Logout Icon" width="40" height="40"
                                 style="margin-right: 10px;">
@@ -119,7 +121,7 @@
 
             </div>
             <!-- Additional Links for Desktop -->
-            <div class="main-content-additional mx-auto d-none d-md-block">
+            <div class="main-content-additional-login mx-auto d-none d-md-block">
                 <div class="d-flex flex-column flex-md-row justify-content-between w-100 pr-md-2">
                     <button type="button"
                         class="btn btn-secondary button-extra col-12 col-md-6 d-flex align-items-center justify-content-center mb-2 mb-md-0 mr-md-1">
@@ -132,6 +134,12 @@
                         <img src="img/wifi.png" alt="Logout Icon" style="width: 50px; margin-right: 1rem;">
                         ลงทะเบียน<br>Free WiFi
                     </button>
+                </div>
+            </div>
+
+            <div class="text-center d-none d-md-block pt-3">
+                <div class="promo2" id="promo2" style="padding-right: 0px;">
+                    <img src="img/promo2.png" alt="Promotion Banner" class="img-fluid promo2-image">
                 </div>
             </div>
 
@@ -160,9 +168,7 @@
                     <p>พื้นที่ให้บริการ</p>
                 </a>
             </div>
-            <div class="promo2" id="promo2">
-                <img src="img/promo2.png" alt="Promotion Banner" class="img-fluid promo2-image">
-            </div>
+            <div style="height: 135px;"></div>
         </div>
         <!-- Bottom Navigation (Mobile Only) -->
         <div class="bottom-nav-mobile">
@@ -201,10 +207,6 @@
                 passwordField.type = 'password';
                 toggleText.textContent = 'Show';
             }
-        }
-        function login() {
-            event.preventDefault();
-            window.location.href = "login-success.html";
         }
     </script>
 </body>

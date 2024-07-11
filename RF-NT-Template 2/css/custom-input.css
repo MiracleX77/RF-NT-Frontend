@@ -81,15 +81,54 @@
 .toggle-password {
     position: absolute;
     right: 20px;
-    top: 72.5%;
+    top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: #665AE152;
+    color: #FCC35352;
     /* Default color */
     font-size: 18px;
 }
 
 .toggle-password:hover {
-    color: #665AE1;
+    color: #FCC353;
     /* Hover color */
+}
+
+.custom-input-login {
+    position: relative;
+    border-radius: 25px;
+    border: 0px solid #DEDEDE;
+    padding: 12px 20px 8px 54px;
+    background-color: white;
+    font-size: 16px;
+    color: #53595F;
+    height: 40px;
+}
+
+.custom-input-login::placeholder {
+    color: #C6C9C4;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.custom-input-login:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-input-login.error {
+    border-color: red;
+    border-width: 1px;
+}
+
+.custom-input-login-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    z-index: 1;
 }
