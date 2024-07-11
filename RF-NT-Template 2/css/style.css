@@ -360,6 +360,7 @@ button.btn.btn-link.accordion-button:focus {
     background-color: transparent; 
     border-bottom: 2px solid #F4A022;
     text-decoration: none;
+    border-radius: 0px !important;
 }
 .accordion-button2.collapsed {
     color: #53595f;

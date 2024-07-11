@@ -159,7 +159,6 @@ label {
   font-size: 20px;
   max-height: 40px !important;
   height: 40px !important;
-  border-radius: 0px !important;
 }
 
 .btn-primary,
@@ -286,6 +285,7 @@ button.btn.btn-link.accordion-button:hover {
   color: #F4A022;
   position: relative;
   border-bottom: 1px solid #F4A022;
+  border-radius: 0px !important;
   text-decoration: none;
 }
 .accordion-button2.collapsed {
