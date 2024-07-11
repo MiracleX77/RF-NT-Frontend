@@ -332,6 +332,12 @@ hr {
   height: 60px !important;
 }
 
+.center-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Media queries for responsive design */
 @media (max-width: 768px) {
   #left-banner {
@@ -472,4 +478,8 @@ hr {
   .button-extra {
     padding: 1rem .75rem !important;
   }
+
+  .center-elements{
+    align-items: normal;
+}
 }
