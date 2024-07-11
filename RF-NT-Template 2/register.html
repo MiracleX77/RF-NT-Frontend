@@ -48,7 +48,7 @@
                 <h1 class="text-center font-weight-bold" style="color: #53595F;">ลงทะเบียน</h1>
 
                 <!-- Form Content Start -->
-                <form>
+                <form onsubmit="return register(event)">
                     <div class="form-row">
                         <div class="form-group col-12 col-md-6">
                             <div class="custom-dropdown">
@@ -281,6 +281,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        function register() {
+            event.preventDefault();
+            window.location.href = "register-success.html";
+        }
+    </script>
 </body>
 
 </html>

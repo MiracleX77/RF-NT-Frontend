@@ -72,9 +72,9 @@
                     <p class="welcome-text text-center">ขอต้อนรับสู่ NT-Wi-Fi</p>
                     
                     <div class="d-flex flex-column align-items-center">
-                        <button type="button" class="btn btn-primary col-12 col-md-3 mb-2" style="background-color: #665AE1; border-color: #665AE1; min-height: 40px;">ใช้อินเทอร์เน็ต</button>
-                        <button type="button" class="btn btn-secondary col-12 col-md-3 d-flex align-items-center justify-content-center" style="background-color: #53595F; border-color: #53595F; min-height: 40px;">
-                            <img src="img/logout.png" alt="Logout Icon" style="width: 20px; margin-right: 10px;"> ออกจากระบบ
+                        <button type="button" onclick="window.location.href='questionnaire.html'" class="btn btn-primary col-12 col-md-3 mb-2" style="background-color: #665AE1; border-color: #665AE1; min-height: 40px;">ใช้อินเทอร์เน็ต</button>
+                        <button type="button" onclick="logout()" class="btn btn-secondary col-12 col-md-3 d-flex align-items-center justify-content-center" style="background-color: #53595F; border-color: #53595F; min-height: 40px;">
+                            <img src="img/logout.png" alt="Logout Icon" style="width: 20px; margin-right: 10px;"> ออกจากระบบ </img>
                         </button>
                     </div>
                 </div>
@@ -129,6 +129,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        function logout() {
+            window.location.href = "logout-success.html";
+        }
+    </script>
+
+
 </body>
 
 </html>

@@ -57,6 +57,7 @@ p {
     font-size: 16px;
     color: #53595F;
     font-weight: 400;
+    line-height: 26.4px;
 }
 
 label {
@@ -115,7 +116,7 @@ label {
 }
 
 .btn {
-    font-size: 16px;
+    font-size: 18px;
     min-height: 40px !important;
     height: 40px !important;
     padding: 0px;
@@ -147,6 +148,224 @@ label {
 .button-extra {
     height: 60px !important;
 }
+
+.body-long-content{
+    max-height: 383px; 
+    overflow-y: auto; 
+    padding-right: 20px; 
+}
+/* Custom Scrollbar */
+.body-long-content::-webkit-scrollbar {
+    width: 15px; /* ความกว้างของ scrollbar */
+}
+
+.body-long-content::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1; /* สีของ thumb */
+    border-radius: 5px; /* มุมโค้งของ thumb */
+    border: 3px solid #f1f1f1; /* ขอบของ thumb */
+}
+
+.body-long-content::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* สีของ track */
+    border-radius: 5px; /* มุมโค้งของ track */
+}
+
+.box-content {
+    width: 60%;
+    font-size: 22px;
+    line-height: 1;
+    text-align: left;
+    border-radius: 5px;
+}
+.box-center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-custom {
+    width: 100%;
+    min-height: 40px !important;
+    border-radius: 25px;
+    height: 40px;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.btn-custom-primary {
+    background-color: #F4A022;
+    border-radius: 25px;
+    color: white;
+    border: 1px solid #F4A022;
+    width: 100%;
+}
+
+.btn-custom-primary:hover {
+    background-color: #F4A022;
+    border-color: #F4A022;
+}
+
+.btn-custom-outline {
+    background-color: transparent;
+    color: #F4A022;
+    border: 1px solid #F4A022;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.btn-custom-outline:hover {
+    background-color: #F4A022;
+    color: white;
+}
+.btn-custom-outline.active {
+    background-color: #F4A022;
+    color: white;
+    border: 1px solid #F4A022;
+}
+.box-row{
+    margin-bottom: 80px;
+}
+.box-row .col-12{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.accordion .accordion-button {
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-top: 5px;
+
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #F4A022; 
+    border-radius: 25px;
+
+}
+
+.accordion .accordion-button.collapsed {
+    color: #F4A022; 
+    border: 1px solid #F4A022; 
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 25px;
+
+}
+
+.accordion .accordion-button.collapsed::after {
+    text-align: right;
+    content: "+";
+    font-size: 2rem;
+    color: #F4A022;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+    text-align: right;
+    content: "-";
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button.btn.btn-link.accordion-button:focus {
+    outline: 0;
+    box-shadow: none !important;
+    text-decoration: none;
+}
+
+/* button.btn.btn-link.accordion-button:hover {
+    color: white;
+    text-decoration: none;
+} */
+
+.accordion .card {
+    border: 0 !important;
+    background-color: rgba(255, 255, 255, 0.0) !important;
+
+}
+.accordion .btn-link {
+    text-decoration: none;
+}
+
+.card-header {
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+    border-bottom: 0 !important;
+    background-color: transparent;
+
+}
+
+.card-body {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    margin-bottom: 20px !important;
+    font-size: 18px !important;
+    text-align: left;
+    line-height: 26.4px !important;
+}
+/* Accordion content  V2 */
+
+
+.accordion-button2 {
+    padding-bottom: 18px;
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+    color: #F4A022;
+    position: relative;
+    background-color: transparent; 
+    border-bottom: 2px solid #F4A022;
+    text-decoration: none;
+}
+.accordion-button2.collapsed {
+    color: #53595f;
+    border-bottom: 2px solid #53595f;
+    text-decoration: none;
+}
+
+.accordion-button2::after {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.accordion-button2.collapsed::after {
+    content: "+";
+}
+
+.accordion-button2:not(.collapsed)::after {
+    content: "-";
+}
+
+button.btn.btn-link.accordion-button2:focus {
+    color: #F4A022;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+button.btn.btn-link.accordion-button2:hover {
+    color: #F4A022;
+    text-decoration : none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #F4A022;
+    margin: 20px 0;
+}
+
+
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
@@ -236,4 +455,20 @@ label {
     .button-extra {
         padding: 1rem .75rem !important;
     }
+    .box-content {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1;
+        text-align: left;
+        padding: 0px;
+        border-radius: 5px;
+    }
+    .box-row{
+        margin-bottom: 60px;
+    }
+    .box-row .col-12{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
 }

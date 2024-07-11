@@ -171,7 +171,7 @@ label {
   width: 100%;
   min-height: 40px !important;
   height: 40px;
-  margin: 5px;
+  margin-bottom: 10px;
   padding: 10px 10px;
   font-size: 18px;
   border-radius: 5px;
@@ -211,22 +211,26 @@ label {
   text-align: left;
   font-size: 22px;
   width: 100%;
-  background-color: #ff9800;
+  background-color: #F4A022;
   color: white;
   position: relative;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 .accordion .accordion-button.collapsed {
   background-color: #ffffff;
-  color: #ff9800;
-  border: 1px solid #ff9800;
+  color: #F4A022;
+  border: 1px solid #F4A022;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 .accordion .accordion-button.collapsed::after {
   text-align: right;
   content: "+";
   font-size: 2rem;
-  color: #ff9800;
+  color: #F4A022;
   position: absolute;
   right: 10px;
   top: 50%;
@@ -247,10 +251,12 @@ label {
 button.btn.btn-link.accordion-button:focus {
   outline: 0;
   box-shadow: none !important;
+  text-decoration: none;
 }
 
 button.btn.btn-link.accordion-button:hover {
-  color: #212529;
+  color: white;
+  text-decoration: none;
 }
 
 .accordion .card {
@@ -260,6 +266,15 @@ button.btn.btn-link.accordion-button:hover {
 .card-header {
   padding: 0 !important;
   margin-bottom: 10px !important;
+  border-bottom: 0 !important;
+
+}
+
+.card-body {
+  padding: 0 !important;
+  border-radius: 0 !important;
+  margin-bottom: 20px !important;
+  font-size: 20px !important;
 }
 /* Accordion content  V2 */
 .accordion-button2 {
@@ -267,14 +282,16 @@ button.btn.btn-link.accordion-button:hover {
   font-size: 22px;
   width: 100%;
   background-color: #ffffff;
-  color: #ff9800;
+  color: #F4A022;
   position: relative;
-  border-bottom: 1px solid #ff9800;
+  border-bottom: 1px solid #F4A022;
+  text-decoration: none;
 }
 .accordion-button2.collapsed {
   background-color: #ffffff;
   color: #53595f;
   border-bottom: 1px solid #53595f;
+  text-decoration: none;
 }
 
 .accordion-button2::after {
@@ -299,12 +316,13 @@ button.btn.btn-link.accordion-button2:focus {
 }
 
 button.btn.btn-link.accordion-button2:hover {
-  color: #212529;
+  color: #F4A022;
+  text-decoration : none;
 }
 
 hr {
   border: 0;
-  border-top: 1px solid #ff9800;
+  border-top: 1px solid #F4A022;
   margin: 20px 0;
 }
 
@@ -434,6 +452,9 @@ hr {
     text-align: left;
     padding: 0px;
     border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .row {

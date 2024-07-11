@@ -45,10 +45,9 @@
 
             <!-- Main Content Card -->
             <div class="main-content-card mx-auto">
-                <h1 class="text-center font-weight-bold" style="color: #53595F;">ลงทะเบียน</h1>
 
                 <!-- Form Content Start -->
-                <form>
+                <form onsubmit="return login(event)">
                     <div class="form-group">
                         <label for="username">ชื่อผู้ใช้</label>
                         <input type="text" id="username" class="form-control custom-input"
@@ -103,6 +102,7 @@
                         ซื้อแพ็กเกจ WiFi
                     </button>
                     <button type="button"
+                        onclick="window.location.href='register.html'"
                         class="btn btn-secondary button-extra col-12 col-md-6 d-flex align-items-center justify-content-center ml-md-1"
                         style="background-color: #ffffff; border-color: #D0D5DD; color: #53595F;">
                         <img src="img/wifi.png" alt="Logout Icon" style="width: 30px; margin-right: 10px;">
@@ -177,6 +177,10 @@
                 passwordField.type = 'password';
                 toggleText.textContent = 'Show';
             }
+        }
+        function login() {
+            event.preventDefault();
+            window.location.href = "login-success.html";
         }
     </script>
 </body>

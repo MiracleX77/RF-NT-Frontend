@@ -79,8 +79,8 @@
                         </div>
 
                         <!-- Center Content Start -->
-                        <form>
-                            <div class="form-group">
+                        <form onsubmit="return login(event)">
+                            <div class="form-group" >
                                 <label for="username">ชื่อผู้ใช้</label>
                                 <input type="text" id="username" class="form-control custom-input"
                                     placeholder="ชื่อผู้ใช้">
@@ -133,6 +133,7 @@
                                 ซื้อแพ็กเกจ WiFi
                             </button>
                             <button type="button"
+                                onclick="window.location.href='register.html'"
                                 class="btn btn-secondary button-extra col-12 col-md-6 d-flex align-items-center justify-content-center ml-md-1"
                                 style="background-color: #ffffff; border-color: #D0D5DD; color: #53595F;">
                                 <img src="img/wifi.png" alt="Logout Icon" style="width: 30px; margin-right: 10px;">
@@ -183,6 +184,11 @@
                 passwordField.type = 'password';
                 toggleText.textContent = 'Show';
             }
+        }
+        function login() {
+            event.preventDefault();
+            console.log("Login Success");
+            window.location.href = "login-success.html";
         }
     </script>
 </body>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เข้าสู่ระบบสำเร็จ</title>
+    <title>ออกจากระบบสำเร็จ</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom-input.css">
@@ -45,17 +45,31 @@
 
             <!-- Main Content Card -->
             <div class="main-content-card mx-auto">
-                <h1 class="text-center font-weight-bold" style="color: #53595F;">เข้าสู่ระบบสำเร็จ</h1>
-
+                <h1 class="text-center font-weight-bold" style="color: #53595F;">ออกจากระบบสำเร็จ</h1>
                 <!-- Form Content Start -->
                 <div class="text-center">
-                    <p class="welcome-text text-center" style="margin-bottom: 60px;">ขอต้อนรับสู่ NT-Wi-Fi</p>
+                    <p class="welcome-text text-center" style="margin-bottom: 20px;">ขอบคุณที่ใช้บริการ NT-Wi-Fi</p>
 
-                    <div class="d-flex flex-column align-items-center pt-3">
-                        <button type="button" onclick="window.location.href='questionnaire.html'" class="btn btn-primary col-12 col-md-5 mb-3" style="border-radius: 25px; background-color: #FCC353; border-color: #FCC353;">เข้าสู่ระบบ</button>
-                        <button type="button" onclick="window.location.href='logout-success.html'" class="btn btn-secondary col-12 col-md-5 d-flex align-items-center justify-content-center" style="border-radius: 25px;  background-color: #53595F; border-color: #53595F;">
-                            <img src="img/logout.png" alt="Logout Icon" style="width: 30px; margin-right: 10px;"> ออกจากระบบ
-                        </button>
+                    <div class="box-center-content">
+                        <div class="box-content justify-content-center">
+                            <div style="line-height: 26.4px; margin-bottom: 20px;">
+                                <p style="margin-bottom: 0px; font-weight: 700;">แพ็คเกจ:</p>
+                                <p style="color: gray; ">WIFI 30 days</p>
+                            </div>
+                            <div style="line-height: 26.4px; margin-bottom: 20px;">
+                                <p style="margin-bottom: 0px; font-weight: 700;">จำนวนการใช้งาน WIFI ที่คงเหลือ:</p>
+                                <p style="color: gray;">30 days</p>
+                            </div>
+                            <div style="line-height: 26.4px; margin-bottom: 20px;">
+                                <p style="margin-bottom: 0px; font-weight: 700;">วันหมดอายุ:</p>
+                                <p style="color: gray;">8/8/2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center">
+                        <button type="button" onclick="window.location.href='login.html'" class="btn btn-primary col-12 col-md-5 " 
+                        style="border-radius: 25px; background-color: #53595F; border-color: #53595F;">กลับสู่หน้าหลัก</button>
                     </div>
                 </div>
                 <!-- Form Content End -->
