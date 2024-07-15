@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-input.css">
+    <link rel="stylesheet" href="css/custom-dropdown.css">
+    <style>
+        body, html {
+            background-color: #FEF8F8;
+            height: 100%;
+            margin: 0;
+            padding: 0 24px;
+            box-sizing: border-box;
+        }
+        .container-fluid {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .header {
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: -200px;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+        .header-title {
+            font-family: 'IBM Plex Sans Thai';
+            color: #DFB6F8;
+            font-size: 26px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 100%;
+        }
+        .video-frame {
+            border: 20px solid white;
+            border-radius: 25px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 700px;
+            min-width: 300px;
+        }
+        .video-frame video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="header">
+            <img src="img/logo.png" alt="NT Logo" class="img-fluid">
+            <div class="header-title">NT Free Wi-Fi</div>
+        </div>
+        <div class="video-container">
+            <div class="video-frame">
+                <video controls>
+                    <source src="your-video-file.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

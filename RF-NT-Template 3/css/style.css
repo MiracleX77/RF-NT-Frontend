@@ -1,0 +1,587 @@
+@font-face {
+  font-family: "IBM Plex Sans Thai";
+  src: url("../fonts/IBMPlexSansThai-Regular.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans Thai";
+  src: url("../fonts/IBMPlexSansThai-Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+html,
+body {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  background-color: #fef8f8;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  flex-grow: 1;
+}
+
+/* Top bar styles */
+.top-bar {
+  background-color: #dfb6f8;
+  border-radius: 0;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; /* Center horizontally */
+  padding-bottom: 10px;
+}
+
+/* Promo banner */
+.promo-banner {
+  margin-top: 10px;
+}
+
+.promo-image {
+  max-width: 450px; /* Limit the size of promo.png */
+}
+
+/* Main content card styles */
+.main-content-card {
+  background-color: #dfb6f8;
+  border-bottom-right-radius: 60px;
+  margin-top: 0;
+  padding: 24px 100px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 900px;
+}
+
+.content-wrapper {
+  background-color: #ffffff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 40px;
+  padding: 24px;
+}
+
+/* Promo2 and Promo styles */
+.promo,
+.promo2 {
+  margin-bottom: 20px;
+}
+
+.promo {
+  margin-top: -100px;
+}
+
+.promo img,
+.promo2 img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+.promo2 {
+  order: -1;
+  margin-right: auto;
+  padding-left: 1rem;
+}
+
+/* Text styles */
+h1 {
+  font-size: 26px;
+  color: #665ae1;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  color: #53595f;
+  font-weight: 400;
+  line-height: 26.4px;
+}
+
+label {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #53595f;
+}
+
+/* Icon and button styles */
+.icon-top-left {
+  height: auto;
+  width: 100%;
+}
+
+.language-dropdown .btn-light {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.btn {
+  font-size: 18px;
+  min-height: 40px !important;
+  height: 40px !important;
+  padding: 0px;
+  border-radius: 8px;
+}
+
+/* Bottom navigation styles */
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  z-index: 2;
+  margin-top: auto; /* Ensure it stays at the bottom of the content */
+}
+
+.bottom-nav .nav-button-group {
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom-nav .nav-item {
+  text-align: center;
+  flex: 1;
+}
+
+.bottom-nav .nav-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.bottom-nav .nav-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #53595f;
+}
+
+/* Additional styles */
+.main-content-card-login1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  padding: 24px 40px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 900px;
+}
+
+.main-content-card-login2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  padding: 24px 40px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 450px;
+}
+
+.main-content-additional {
+  max-width: 900px;
+}
+
+.main-content-additional-login {
+  max-width: 450px;
+}
+
+.promo2-mobile {
+  display: none;
+}
+
+.bottom-nav-mobile {
+  display: none;
+}
+
+.button-extra {
+  background-color: transparent;
+  color: #53595f;
+  border: 0px;
+  font-size: 18px;
+  text-align: left;
+  height: 60px !important;
+}
+
+.body-long-content {
+  max-height: 383px;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+/* Custom Scrollbar */
+.body-long-content::-webkit-scrollbar {
+  width: 15px; /* ความกว้างของ scrollbar */
+}
+
+.body-long-content::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1; /* สีของ thumb */
+  border-radius: 5px; /* มุมโค้งของ thumb */
+  border: 3px solid #f1f1f1; /* ขอบของ thumb */
+}
+
+.body-long-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* สีของ track */
+  border-radius: 5px; /* มุมโค้งของ track */
+}
+
+.box-content {
+  width: 60%;
+  font-size: 22px;
+  line-height: 1;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.box-center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-custom {
+  width: 100%;
+  min-height: 40px !important;
+  border-radius: 25px;
+  height: 40px;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+
+.btn-custom-primary {
+  background-color: #f4a022;
+  border-radius: 25px;
+  color: white;
+  border: 1px solid #f4a022;
+  width: 100%;
+}
+
+.btn-custom-primary:hover {
+  background-color: #f4a022;
+  border-color: #f4a022;
+}
+
+.btn-custom-outline {
+  background-color: transparent;
+  color: #f4a022;
+  border: 1px solid #f4a022;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.btn-custom-outline:hover {
+  background-color: #f4a022;
+  color: white;
+}
+
+.btn-custom-outline.active {
+  background-color: #f4a022;
+  color: white;
+  border: 1px solid #f4a022;
+}
+
+.box-row {
+  margin-bottom: 80px;
+}
+
+.box-row .col-12 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.accordion .accordion-button {
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-top: 5px;
+
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #f4a022;
+  border-radius: 25px;
+}
+
+.accordion .accordion-button.collapsed {
+  color: #f4a022;
+  border: 1px solid #f4a022;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+}
+
+.accordion .accordion-button.collapsed::after {
+  text-align: right;
+  content: "+";
+  font-size: 2rem;
+  color: #f4a022;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+  text-align: right;
+  content: "-";
+  font-size: 2rem;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+button.btn.btn-link.accordion-button:focus {
+  outline: 0;
+  box-shadow: none !important;
+  text-decoration: none;
+}
+
+/* button.btn.btn-link.accordion-button:hover {
+    color: white;
+    text-decoration: none;
+} */
+
+.accordion .card {
+  border: 0 !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.accordion .btn-link {
+  text-decoration: none;
+}
+
+.card-header {
+  padding: 0 !important;
+  margin-bottom: 20px !important;
+  border-bottom: 0 !important;
+  background-color: transparent;
+}
+
+.card-body {
+  padding: 0 !important;
+  border-radius: 0 !important;
+  margin-bottom: 20px !important;
+  font-size: 18px !important;
+  text-align: left;
+  line-height: 26.4px !important;
+}
+
+/* Accordion content  V2 */
+.accordion-button2 {
+  padding-bottom: 18px;
+  text-align: left;
+  font-size: 20px;
+  width: 100%;
+  color: #f4a022;
+  position: relative;
+  background-color: transparent;
+  border-bottom: 2px solid #f4a022;
+  text-decoration: none;
+  border-radius: 0px !important;
+}
+
+.accordion-button2.collapsed {
+  color: #53595f;
+  border-bottom: 2px solid #53595f;
+  text-decoration: none;
+}
+
+.accordion-button2::after {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+}
+
+.accordion-button2.collapsed::after {
+  content: "+";
+}
+
+.accordion-button2:not(.collapsed)::after {
+  content: "-";
+}
+
+button.btn.btn-link.accordion-button2:focus {
+  color: #f4a022;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+button.btn.btn-link.accordion-button2:hover {
+  color: #f4a022;
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #f4a022;
+  margin: 20px 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .promo-wrapper {
+    padding-inline: 12px;
+  }
+
+  .promo {
+    margin-top: 0px;
+  }
+
+  .promo-image {
+    width: 100%;
+  }
+
+  .top-bar {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .language-dropdown {
+    width: 50%;
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+  }
+
+  .bottom-nav {
+    display: none !important; /* Hide the bottom nav on mobile */
+  }
+
+  .bottom-nav-mobile {
+    display: flex;
+    background-color: #DFB6F8;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+    border-top-left-radius: 60px;
+  }
+
+  .bottom-nav-mobile .nav-item p {
+    font-size: 12px;
+  }
+
+  .bottom-nav-mobile .nav-item {
+    text-align: center;
+    flex: 1;
+    margin-inline: 5px;
+  }
+
+  .bottom-nav-mobile .nav-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+
+  .bottom-nav-mobile .nav-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #53595f;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  #request-otp {
+    width: 100%; /* Full width for OTP button on mobile */
+  }
+
+  .main-content-card {
+    padding: 24px 12px 0px 12px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 0px;
+  }
+
+  .content-wrapper-no-bg {
+    padding: 0px 12px 0px 12px;
+  }
+
+  .main-content-mobile-radius {
+    background-color: #dfb6f8;
+    height: 40px;
+    max-height: 40px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .main-content-card-login1 {
+    width: 90%;
+    padding: 24px 12px;
+  }
+
+  .main-content-card-login2 {
+    width: 90%;
+    padding: 24px 12px;
+  }
+
+  .main-content-additional {
+    width: 90%;
+  }
+
+  .main-content-additional-login {
+    width: 90%;
+  }
+
+  .promo2-mobile {
+    background-image: url("../img/bg-promo2.png");
+    background-size: auto;
+    background-position: center;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .promo2-mobile img {
+    width: 90%;
+  }
+
+  .button-extra {
+    background-color: transparent;
+    color: #53595f;
+    border: 0px;
+    font-size: 12px;
+    text-align: left;
+    height: 50px !important;
+  }
+
+  .box-content {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1;
+    text-align: left;
+    padding: 0px;
+    border-radius: 5px;
+  }
+
+  .box-row {
+    margin-bottom: 60px;
+  }
+
+  .box-row .col-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
