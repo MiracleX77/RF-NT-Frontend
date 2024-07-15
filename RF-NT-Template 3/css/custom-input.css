@@ -84,19 +84,19 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: #FCC35352;
+    color: #DFB6F852;
     /* Default color */
     font-size: 18px;
 }
 
 .toggle-password:hover {
-    color: #FCC353;
+    color: #DFB6F8;
     /* Hover color */
 }
 
 .custom-input-login {
     position: relative;
-    border-radius: 25px;
+    border-radius: 8px;
     border: 0px solid #DEDEDE;
     padding: 12px 20px 8px 54px;
     background-color: white;

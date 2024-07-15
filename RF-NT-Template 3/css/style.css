@@ -30,6 +30,16 @@ body {
   flex-grow: 1;
 }
 
+.bg-main-content-login {
+  background-color: #dfb6f8;
+  border-bottom-right-radius: 60px;
+  margin-left: 0px !important;
+}
+
+.bg-half-right {
+  min-height: max-content;
+}
+
 /* Top bar styles */
 .top-bar {
   background-color: #dfb6f8;
@@ -47,6 +57,7 @@ body {
 
 .promo-image {
   max-width: 450px; /* Limit the size of promo.png */
+  margin-bottom: 1rem;
 }
 
 /* Main content card styles */
@@ -66,6 +77,27 @@ body {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 40px;
   padding: 24px;
+}
+
+  background-color: #dfb6f8;
+  border-bottom-right-radius: 60px;
+  margin-top: 0;
+  padding: 24px 40px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 900px;
+}
+
+.main-content-card-login-wrapper{
+  margin-right: 80px;
+  margin-top: -150px;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 512px;
+  height: auto;
+  margin: auto;
 }
 
 /* Promo2 and Promo styles */
@@ -170,31 +202,12 @@ label {
   color: #53595f;
 }
 
-/* Additional styles */
-.main-content-card-login1 {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 40px;
-  padding: 24px 40px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  max-width: 900px;
-}
-
-.main-content-card-login2 {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 40px;
-  padding: 24px 40px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  max-width: 450px;
-}
-
 .main-content-additional {
   max-width: 900px;
 }
 
 .main-content-additional-login {
-  max-width: 450px;
+  width: 100%;
 }
 
 .promo2-mobile {
@@ -353,8 +366,8 @@ button.btn.btn-link.accordion-button:focus {
 }
 
 /* button.btn.btn-link.accordion-button:hover {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 } */
 
 .accordion .card {
@@ -452,6 +465,7 @@ hr {
   .top-bar {
     flex-direction: row;
     gap: 20px;
+    padding-bottom: 0px;
   }
 
   .language-dropdown {
@@ -467,7 +481,7 @@ hr {
 
   .bottom-nav-mobile {
     display: flex;
-    background-color: #DFB6F8;
+    background-color: #dfb6f8;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -511,13 +525,22 @@ hr {
   }
 
   .main-content-card {
-    padding: 24px 12px 0px 12px;
+    padding: 0px 12px 0px 12px;
     border-bottom-right-radius: 0px;
     margin-bottom: 0px;
   }
 
   .content-wrapper-no-bg {
     padding: 0px 12px 0px 12px;
+  }
+
+  .bg-main-content-login{
+    background-color: white;
+  }
+
+  .main-content-right-mobile{
+    background-color: #dfb6f8;
+    padding-inline: 0px !important;
   }
 
   .main-content-mobile-radius {
@@ -527,14 +550,17 @@ hr {
     border-bottom-right-radius: 60px;
   }
 
-  .main-content-card-login1 {
-    width: 90%;
-    padding: 24px 12px;
+  .main-content-card-login {
+    padding: 0px 12px 0px 12px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 0px;
+    margin-inline: 0px !important;
+    width: 100%;
   }
 
-  .main-content-card-login2 {
-    width: 90%;
-    padding: 24px 12px;
+  .main-content-card-login-wrapper{
+    margin-right: 0px;
+    margin-top: 0px;
   }
 
   .main-content-additional {
@@ -552,6 +578,7 @@ hr {
     display: block;
     padding-top: 20px;
     padding-bottom: 10px;
+    margin-bottom: 118px;
   }
 
   .promo2-mobile img {
