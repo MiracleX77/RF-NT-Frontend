@@ -46,6 +46,10 @@ html, body {
     height: auto;
 }
 
+.promo2-image {
+    width: 450px;
+}
+
 h1 {
     font-size: 26px;
     color: #665AE1;
@@ -81,39 +85,42 @@ label {
 
 .bottom-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: transparent;
     width: 100%;
     z-index: 2;
-    margin-top: auto; /* Ensure it stays at the bottom of the content */
-}
-
-.bottom-nav .nav-button-group {
+    margin-top: auto;
+    padding-top: 10px;
+  }
+  
+  .bottom-nav .nav-button-group {
     display: flex;
-    justify-content: center;
-    width: 450px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.bottom-nav .nav-item {
+    justify-content: space-around;
+    min-width: 450px;
+    padding-block: 12px;
+    gap: 50px;
+  }
+  
+  .bottom-nav .nav-item {
     text-align: center;
     flex: 1;
-}
-
-.bottom-nav .nav-item img {
+  }
+  
+  .bottom-nav .nav-item img {
     width: 40px;
     height: 40px;
     margin-bottom: 5px;
-}
-
-.bottom-nav .nav-item p {
+  }
+  
+  .bottom-nav .nav-item p {
     margin: 0;
     font-size: 14px;
     color: #53595F;
-}
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
 .btn {
     font-size: 18px;
@@ -155,16 +162,6 @@ label {
 
 .main-content-additional-login {
     max-width: 450px;
-}
-
-.promo2 {
-    flex-shrink: 0;
-    margin-left: auto;
-    padding-right: 1rem; /* Add padding from the right page border */
-}
-
-.promo2-mobile {
-    display: none;
 }
 
 .bottom-nav-mobile {
