@@ -52,7 +52,7 @@
 
                     <!-- Top Bar -->
                     <div class="top-bar bg-top-bar mx-auto">
-                        <div class="d-flex justify-content-between align-items-center p-3">
+                        <div class="d-flex justify-content-between align-items-center top-wrapper">
                             <div class="col-6 col-md-5">
                                 <img src="img/icon-mobile.png" alt="Icon" class="icon-top-left d-md-none">
                             </div>
@@ -88,7 +88,7 @@
                             <!-- <h1 class="text-center font-weight-bold" style="color: #53595F;">เข้าสู่ระบบ</h1> -->
                             <img src="img/icon.png" alt="Icon" class="icon-top-left d-none d-md-block mb-5">
                             <!-- Form Content Start -->
-                            <form>
+                            <form onsubmit="return login(event)">
                                 <div class="form-group">
                                     <div class="position-relative">
                                         <img src="img/user.png" alt="User Icon" class="custom-input-login-icon">
@@ -243,6 +243,10 @@
                 passwordField.type = 'password';
                 toggleText.textContent = 'Show';
             }
+        }
+        function login() {
+            event.preventDefault();
+            window.location.href = "login-success.html";
         }
     </script>
 </body>

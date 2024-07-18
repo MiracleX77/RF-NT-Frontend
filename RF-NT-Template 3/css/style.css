@@ -70,7 +70,9 @@ body {
   margin-bottom: 1rem;
   max-width: 900px;
 }
-
+.top-wrapper{
+  padding: 12px 24px 20px 24px;
+}
 .content-wrapper {
   background-color: #ffffff;
   border-top-left-radius: 8px;
@@ -180,7 +182,7 @@ label {
 .bottom-nav .nav-button-group {
   display: flex;
   justify-content: center;
-  width: 450px;
+  width: 490px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -229,9 +231,12 @@ label {
 }
 
 .body-long-content {
-  max-height: 383px;
+  max-height: 300px;
   overflow-y: auto;
   padding-right: 20px;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* Custom Scrollbar */
@@ -267,7 +272,7 @@ label {
 .btn-custom {
   width: 100%;
   min-height: 40px !important;
-  border-radius: 25px;
+  border-radius: 8px;
   height: 40px;
   padding: 10px 10px;
   font-size: 18px;
@@ -291,7 +296,7 @@ label {
   color: #f4a022;
   border: 1px solid #f4a022;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 8px;
 }
 
 .btn-custom-outline:hover {
@@ -306,7 +311,7 @@ label {
 }
 
 .box-row {
-  margin-bottom: 80px;
+  margin-bottom: 25px;
 }
 
 .box-row .col-12 {
@@ -324,19 +329,17 @@ label {
   font-size: 20px;
   width: 100%;
   position: relative;
-  border-radius: 4px;
   text-decoration: none;
   background-color: #f4a022;
-  border-radius: 25px;
+  border-radius: 8px;
 }
 
 .accordion .accordion-button.collapsed {
   color: #f4a022;
   border: 1px solid #f4a022;
-  border-radius: 4px;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 25px;
+  border-radius: 8px;
 }
 
 .accordion .accordion-button.collapsed::after {
@@ -382,7 +385,7 @@ button.btn.btn-link.accordion-button:focus {
 
 .card-header {
   padding: 0 !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 12px !important;
   border-bottom: 0 !important;
   background-color: transparent;
 }
@@ -395,54 +398,6 @@ button.btn.btn-link.accordion-button:focus {
   text-align: left;
   line-height: 26.4px !important;
 }
-
-/* Accordion content  V2 */
-.accordion-button2 {
-  padding-bottom: 18px;
-  text-align: left;
-  font-size: 20px;
-  width: 100%;
-  color: #f4a022;
-  position: relative;
-  background-color: transparent;
-  border-bottom: 2px solid #f4a022;
-  text-decoration: none;
-  border-radius: 0px !important;
-}
-
-.accordion-button2.collapsed {
-  color: #53595f;
-  border-bottom: 2px solid #53595f;
-  text-decoration: none;
-}
-
-.accordion-button2::after {
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-}
-
-.accordion-button2.collapsed::after {
-  content: "+";
-}
-
-.accordion-button2:not(.collapsed)::after {
-  content: "-";
-}
-
-button.btn.btn-link.accordion-button2:focus {
-  color: #f4a022;
-  outline: 0;
-  box-shadow: none !important;
-}
-
-button.btn.btn-link.accordion-button2:hover {
-  color: #f4a022;
-  text-decoration: none;
-}
-
 hr {
   border: 0;
   border-top: 1px solid #f4a022;
@@ -452,7 +407,15 @@ hr {
 /* Media queries for responsive design */
 @media (max-width: 768px) {
   .promo-wrapper {
-    padding-inline: 12px;
+    padding: 0px 24px 0px 24px;
+  }
+  .top-wrapper{
+    padding: 12px 24px 20px 24px;
+  }
+
+  .top-wrapper .col-6{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .promo {
@@ -526,7 +489,7 @@ hr {
   }
 
   .main-content-card {
-    padding: 0px 12px 0px 12px;
+    padding: 0px 24px 0px 24px;
     border-bottom-right-radius: 0px;
     margin-bottom: 0px;
   }
@@ -552,7 +515,7 @@ hr {
   }
 
   .main-content-card-login {
-    padding: 0px 12px 0px 12px;
+    padding: 0px 24px 0px 24px;
     border-bottom-right-radius: 0px;
     margin-bottom: 0px;
     margin-inline: 0px !important;
@@ -577,13 +540,12 @@ hr {
     background-size: auto;
     background-position: center;
     display: block;
-    padding-top: 20px;
-    padding-bottom: 10px;
     margin-bottom: 118px;
+    padding: 20px 24px 10px 24px;
   }
 
   .promo2-mobile img {
-    width: 90%;
+    width: 100%;
   }
 
   .button-extra {
