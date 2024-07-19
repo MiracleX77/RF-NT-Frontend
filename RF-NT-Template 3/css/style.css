@@ -583,4 +583,16 @@ hr {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .pb-20-mobile {
+    padding-bottom: 20px !important;
+  }
+
+  .pr-10-mobile {
+    padding-right: 10px !important;
+  }
+
+  .pl-10-mobile {
+    padding-left: 10px !important;
+  }
 }
