@@ -90,6 +90,7 @@
   background-color: white;
   color: #53595F;
   height: 40px !important;
+  min-height: 40px !important;
   padding: 6px 16px;
   border-radius: 25px;
   display: flex;

@@ -426,6 +426,10 @@ hr {
   margin: 20px 0;
 }
 
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+
 /* Media queries for responsive design */
 @media (max-width: 768px) {
   .promo {
