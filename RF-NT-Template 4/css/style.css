@@ -343,6 +343,10 @@ hr {
   align-items: center;
 }
 
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+
 /* Media queries for responsive design */
 @media (max-width: 768px) {
   #left-banner {
