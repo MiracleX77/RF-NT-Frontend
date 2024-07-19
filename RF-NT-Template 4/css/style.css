@@ -57,7 +57,7 @@ label {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 25%;
+  /* width: 25%; */
 }
 
 #left-banner-login {
@@ -65,11 +65,11 @@ label {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 60%;
+  /* width: 60%; */
 }
 
 #main-content {
-  margin-left: 25%;
+  margin-left: auto;
   padding-top: 20px;
   border-radius: 0; /* Default border-radius for main-content */
   background-color: #fff; /* Added white background for the main content */
@@ -78,7 +78,7 @@ label {
 }
 
 #main-content-login {
-  margin-left: 60%;
+  margin-left: auto;
   padding-top: 20px;
   border-radius: 0; /* Default border-radius for main-content */
   background-color: #fff; /* Added white background for the main content */
