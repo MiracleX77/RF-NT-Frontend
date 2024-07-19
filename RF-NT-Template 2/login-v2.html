@@ -15,12 +15,6 @@
             height: auto;
         }
 
-        .btn-secondary:not(:disabled):not(.disabled).active,
-        .btn-secondary:not(:disabled):not(.disabled):hover,
-        .btn-secondary:not(:disabled):not(.disabled):focus,
-        .btn-secondary:not(:disabled):not(.disabled).active:hover,
-        .btn-secondary:not(:disabled):not(.disabled).active:focus,
-        .btn-secondary:not(:disabled):not(.disabled):focus:hover,
         .button-extra:not(:disabled):not(.disabled).active,
         .button-extra:not(:disabled):not(.disabled):hover,
         .button-extra:not(:disabled):not(.disabled):focus,
@@ -28,12 +22,13 @@
         .button-extra:not(:disabled):not(.disabled).active:focus,
         .button-extra:not(:disabled):not(.disabled):focus:hover {
             background-color: transparent;
+            box-shadow: 0 0 0 0;
             color: #53595F;
             border: 0px;
             font-size: 18px;
             text-align: left;
-            height: 60px !important;
         }
+
     </style>
 </head>
 
@@ -101,7 +96,7 @@
                         <button type="submit" class="btn btn-primary col-12 mx-auto mb-3"
                             style="height: 40px; background-color: #FCC353; border-color: #FCC353;">เข้าสู่ระบบ</button>
                         <button type="button"
-                            class="btn btn-secondary col-12 mx-auto mb-2 d-flex align-items-center justify-content-center"
+                            class="btn btn-primary col-12 mx-auto mb-2 d-flex align-items-center justify-content-center"
                             style="height: 40px; background-color: #030650; border-color: #030650;">
                             <img src="img/thaiID.png" alt="Logout Icon" width="40" height="40"
                                 style="margin-right: 10px;">
