@@ -55,8 +55,8 @@ body {
 }
 
 .promo-image {
-  max-width: 450px; /* Limit the size of promo.png */
-  margin-bottom: 1rem;
+  max-width: 424px; /* Limit the size of promo.png */
+  margin-bottom: 12px;
 }
 
 
@@ -133,7 +133,6 @@ body {
 }
 
 .promo2-wrapper {
-  flex-grow: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -323,12 +322,12 @@ label {
 
 .btn-custom-outline:hover {
   background-color: #f4a022;
-  color: white;
+  color: #53595F;
 }
 
 .btn-custom-outline.active {
   background-color: #f4a022;
-  color: white;
+  color: #53595F;
   border: 1px solid #f4a022;
 }
 
@@ -416,7 +415,7 @@ button.btn.btn-link.accordion-button:focus {
   padding: 0 !important;
   border-radius: 0 !important;
   margin-bottom: 20px !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
   text-align: left;
   line-height: 26.4px !important;
 }
@@ -436,6 +435,12 @@ hr {
 
 .mb-100 {
   margin-bottom: 116px;
+}
+.form-row {
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
 }
 
 /* Media queries for responsive design */
@@ -582,5 +587,19 @@ hr {
     border: 0px;
     font-size: 12px;
     text-align: left;
+  }
+
+  .promo2-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 116px;
+  }
+  .box-center-content {
+    justify-content: left;
+  }
+  .box-content {
+    width: 100%;
   }
 }
