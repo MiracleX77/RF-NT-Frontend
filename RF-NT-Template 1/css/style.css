@@ -31,9 +31,9 @@ body {
 }
 
 .bg-main-content-login {
-  background-color: #dfb6f8;
-  border-bottom-right-radius: 60px;
-  margin-left: 0px !important;
+  background-color: #F5F3DD;
+  border-top-left-radius: 60px;
+  margin-left: auto !important; /* Align content to the right side */
 }
 
 .bg-half-right {
@@ -47,6 +47,12 @@ body {
   width: 100%;
   max-width: 900px;
   margin: 0 auto; /* Center horizontally */
+}
+
+.top-bar-login {
+  background-color: transparent;
+  border-radius: 0;
+  width: 100%;
 }
 
 /* Promo banner */
@@ -95,9 +101,12 @@ body {
   max-width: 900px;
 }
 
-.main-content-card-login-wrapper {
-  margin-right: 80px;
-  margin-top: -150px;
+.main-content-left-login {
+  padding-left: 135px;
+}
+
+.banner-content-right-login {
+  width: 100%;
 }
 
 .banner-image {
@@ -145,6 +154,11 @@ body {
 
 .promo2 img {
   width: 100%;
+}
+
+.promo2-login {
+  bottom: 10px;
+  right: 10px;
 }
 
 /* Text styles */
@@ -202,6 +216,11 @@ label {
   z-index: 2;
 }
 
+.bottom-nav-login {
+  width: 100%;
+  height: 100px;
+}
+
 .bottom-nav .nav-button-group {
   display: flex;
   justify-content: center;
@@ -211,6 +230,14 @@ label {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.bottom-nav .nav-button-group-login {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #FAF9EE;
+  padding: 14px 0px 14px 0px;
 }
 
 .bottom-nav .nav-item {
@@ -441,6 +468,10 @@ hr {
   margin-bottom: 20px;
 }
 
+.pr-60-dt {
+  padding-right: 60px;
+}
+
 /* Media queries for responsive design */
 @media (max-width: 768px) {
   .promo-wrapper {
@@ -577,6 +608,10 @@ hr {
 
   .main-content-additional-login {
     width: 90%;
+  }
+
+  .main-content-left-login {
+    padding-inline: 0px;
   }
 
   .button-extra {

@@ -53,8 +53,8 @@
 }
 
 .custom-checkbox:checked {
-    background-color: #FCC353;
-    border-color: #FCC353;
+    background-color: #FFE800;
+    border-color: #FFE800;
 }
 
 .custom-checkbox:checked::after {
@@ -84,13 +84,13 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: #DFB6F852;
+    color: #FFE80052;
     /* Default color */
     font-size: 18px;
 }
 
 .toggle-password:hover {
-    color: #DFB6F8;
+    color: #FFE800;
     /* Hover color */
 }
 
