@@ -77,6 +77,9 @@
     background-color: white;
     padding: 5px 10px;
     border-radius: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .language-dropdown .custom-dropdown-toggle img {
