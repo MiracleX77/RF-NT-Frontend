@@ -129,7 +129,7 @@ body {
 .promo2-wrapper.login {
   position: absolute;
   bottom: 0px;
-  left: 24px;
+  left: 36px;
 }
 
 .promo2 {
@@ -138,6 +138,10 @@ body {
 
 .promo2 img {
   width: 100%;
+}
+
+.promo2.login img {
+  height: 100px;
 }
 
 /* Text styles */
@@ -189,6 +193,7 @@ label {
   align-items: center;
   background-color: transparent;
   width: 100%;
+  height: 100px;
   z-index: 2;
   margin-top: auto;
   padding: 10px;
@@ -560,6 +565,7 @@ hr {
 
   .promo2-wrapper.login {
     position: relative;
+    left: 0px;
   }
 
   .button-extra {
