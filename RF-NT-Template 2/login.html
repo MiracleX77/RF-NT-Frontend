@@ -14,7 +14,7 @@
             border-left: 1px solid #53595F;
             height: auto;
         }
-        
+
         .button-extra:not(:disabled):not(.disabled).active,
         .button-extra:not(:disabled):not(.disabled):hover,
         .button-extra:not(:disabled):not(.disabled):focus,
@@ -28,7 +28,6 @@
             font-size: 18px;
             text-align: left;
         }
-
     </style>
 </head>
 
@@ -68,11 +67,11 @@
             </div>
 
             <!-- Main Content Card -->
-            <div class="main-content-card-login1 mx-auto">
+            <div class="main-content-card-login2 mx-auto">
                 <!-- <h1 class="text-center font-weight-bold" style="color: #53595F;">เข้าสู่ระบบ</h1> -->
 
                 <!-- Form Content Start -->
-                <form onsubmit="return login(event)">
+                <form>
                     <div class="form-group">
                         <div class="position-relative">
                             <img src="img/user.png" alt="User Icon" class="custom-input-login-icon">
@@ -96,10 +95,10 @@
                         <a href="reset-password.html" class="float-right" style="color: #53595F;">ลืมรหัสผ่าน</a>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary col-12 col-md-6 mx-auto mb-3"
+                        <button type="submit" class="btn btn-primary col-12 mx-auto mb-3"
                             style="height: 40px; background-color: #FCC353; border-color: #FCC353;">เข้าสู่ระบบ</button>
                         <button type="button"
-                            class="btn btn-primary col-12 col-md-6 mx-auto mb-2 d-flex align-items-center justify-content-center"
+                            class="btn btn-primary col-12 mx-auto mb-2 d-flex align-items-center justify-content-center"
                             style="height: 40px; font-size: 14px; background-color: #030650; border-color: #030650;">
                             <img src="img/thaiID.png" alt="Logout Icon" width="40" height="40"
                                 style="margin-inline: 10px;">
@@ -182,10 +181,6 @@
                 passwordField.type = 'password';
                 toggleText.textContent = 'Show';
             }
-        }
-        function login() {
-            event.preventDefault();
-            window.location.href = "login-success.html";
         }
     </script>
 </body>
