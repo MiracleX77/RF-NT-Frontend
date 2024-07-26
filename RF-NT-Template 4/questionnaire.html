@@ -13,58 +13,35 @@
 
 <body>
     <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <!-- Desktop Banner -->
-            <div class="col-md-3 d-none d-md-block" id="left-banner">
-                <div class="d-flex flex-column px-0 icon-top-left">
-                    <img src="img/NT1.png" alt="Icon" class="pb-20">
-                    <img src="img/NT2.png" alt="Icon">
+        <!-- Top Bar -->
+        <div class="top-bar d-flex flex-row justify-content-between align-items-start p-2">
+            <div class="d-flex flex-column col-6 col-md-11">
+                <img src="img/NT1.png" alt="Icon" class="icon-nt">
+                <img src="img/NT2.png" alt="Icon" class="icon-nt">
+            </div>
+            <div class="custom-dropdown language-dropdown align-self-start col-6 col-md-1">
+                <button class="btn btn-light custom-dropdown-toggle" type="button" id="languageDropdown">
+                    <img class="mr-2" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
+                    <span class="dropdown-arrow">&#9662;</span>
+                </button>
+                <div class="custom-dropdown-menu" id="languageDropdownMenu">
+                    <a class="dropdown-item" href="#" data-value="ไทย" data-flag="img/flag-th.png"><img src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย</a>
+                    <a class="dropdown-item" href="#" data-value="English" data-flag="img/flag-us.png"><img src="img/flag-us.png" alt="US Flag" width="20" height="15"> English</a>
+                    <a class="dropdown-item" href="#" data-value="日本語" data-flag="img/flag-jp.png"><img src="img/flag-jp.png" alt="Japan Flag" width="20" height="15"> 日本語</a>
+                    <a class="dropdown-item" href="#" data-value="한국어" data-flag="img/flag-kr.png"><img src="img/flag-kr.png" alt="Korea Flag" width="20" height="15"> 한국어</a>
+                    <a class="dropdown-item" href="#" data-value="中国的" data-flag="img/flag-cn.png"><img src="img/flag-cn.png" alt="China Flag" width="20" height="15"> 中国的</a>
                 </div>
-                <img src="img/backgroud.jpg" alt="Banner Image" class="img-fluid w-100 h-100"
-                    style="object-fit: cover;">
+            </div>
+        </div>
+
+        <div class="row no-gutters main-container">
+            <!-- Left Banner -->
+            <div class="col-md-3 d-md-block" id="left-banner">
+                <img src="img/backgroud.jpg" alt="Banner Image" class="img-fluid w-100 h-100" style="object-fit: cover;">
             </div>
 
-            <!-- Mobile Banner -->
-            <div class="d-block d-md-none w-100" id="mobile-banner">
-                <div class="banner-content">
-                    <div class="d-flex flex-column px-0 icon-top-left-mobile">
-                        <img src="img/NT1.png" alt="Icon" class="pb-20">
-                        <img src="img/NT2.png" alt="Icon">
-                    </div>
-                    <div class="custom-dropdown language-dropdown col-5">
-                        <button class="btn btn-light custom-dropdown-toggle" type="button" id="languageDropdown">
-                            <img class="mr-2" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
-                            <span class="dropdown-arrow">&#9662;</span>
-                        </button>
-                        <div class="custom-dropdown-menu" id="languageDropdownMenu">
-                            <a class="dropdown-item" href="#" data-value="ไทย" data-flag="img/flag-th.png"><img src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย</a>
-                            <a class="dropdown-item" href="#" data-value="English" data-flag="img/flag-us.png"><img src="img/flag-us.png" alt="US Flag" width="20" height="15"> English</a>
-                            <a class="dropdown-item" href="#" data-value="日本語" data-flag="img/flag-jp.png"><img src="img/flag-jp.png" alt="Japan Flag" width="20" height="15"> 日本語</a>
-                            <a class="dropdown-item" href="#" data-value="한국어" data-flag="img/flag-kr.png"><img src="img/flag-kr.png" alt="Korea Flag" width="20" height="15"> 한국어</a>
-                            <a class="dropdown-item" href="#" data-value="中国的" data-flag="img/flag-cn.png"><img src="img/flag-cn.png" alt="China Flag" width="20" height="15"> 中国的</a>
-                        </div>
-                    </div>
-                </div>
-                <img src="img/backgroud.jpg" alt="Banner Image" class="img-fluid w-100">
-            </div>
-            
             <!-- Main Content -->
-            <div class="col-md-9 d-flex flex-column px-4" id="main-content">
-                <div class="justify-content-end p-3 d-none d-md-flex">
-                    <div class="custom-dropdown language-dropdown col-2">
-                        <button class="btn btn-light custom-dropdown-toggle" type="button" id="languageDropdown">
-                            <img class="mr-2" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
-                            <span class="dropdown-arrow">&#9662;</span>
-                        </button>
-                        <div class="custom-dropdown-menu" id="languageDropdownMenu">
-                            <a class="dropdown-item" href="#" data-value="ไทย" data-flag="img/flag-th.png"><img src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย</a>
-                            <a class="dropdown-item" href="#" data-value="English" data-flag="img/flag-us.png"><img src="img/flag-us.png" alt="US Flag" width="20" height="15"> English</a>
-                            <a class="dropdown-item" href="#" data-value="日本語" data-flag="img/flag-jp.png"><img src="img/flag-jp.png" alt="Japan Flag" width="20" height="15"> 日本語</a>
-                            <a class="dropdown-item" href="#" data-value="한국어" data-flag="img/flag-kr.png"><img src="img/flag-kr.png" alt="Korea Flag" width="20" height="15"> 한국어</a>
-                            <a class="dropdown-item" href="#" data-value="中国的" data-flag="img/flag-cn.png"><img src="img/flag-cn.png" alt="China Flag" width="20" height="15"> 中国的</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-9 d-flex flex-column" id="main-content">
 
                 <!-- Promo Banner -->
                 <div class="promo my-3 text-center">
@@ -72,7 +49,7 @@
                 </div>
 
                 <!-- Content Header -->
-                <h1 class="my-4 text-center font-weight-bold" style="color: #665AE1;">1. NT-Wi-Fi มีความเสถียรหรือไม่ ?</h1>
+                <h1 class="mb-4 text-center font-weight-bold" style="color: #665AE1;">1. NT-Wi-Fi มีความเสถียรหรือไม่ ?</h1>
 
                 <!-- Center Content Start -->
                 <div class="main-content">
@@ -104,11 +81,13 @@
                 </div>
                 <!-- Center Content End -->
 
-                <div class="promo my-3 text-center">
+                <!-- Promo2 Banner -->
+                <div class="promo mobile my-3 text-center">
                     <img src="img/promo2.png" alt="Promotion Banner" class="img-fluid">
                 </div>
 
-                <div class="mt-auto bottom-nav d-none d-md-flex">
+                <!-- Bottom Navigation -->
+                <div class="mt-auto bottom-nav">
                     <a href="error.html" class="nav-item">
                         <img src="img/check-usage.png" alt="ตรวจสอบยอดใช้งาน">
                         <p>ตรวจสอบยอดใช้งาน</p>
@@ -128,25 +107,8 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-nav d-md-none">
-            <a href="error.html" class="nav-item col-3">
-                <img src="img/check-usage.png" alt="ตรวจสอบยอดใช้งาน">
-                <p>ตรวจสอบยอดใช้งาน</p>
-            </a>
-            <a href="howto.html" class="nav-item col-3">
-                <img src="img/usage-guide.png" alt="วิธีการใช้งาน">
-                <p>วิธีการใช้งาน</p>
-            </a>
-            <a href="troubleshoot.html" class="nav-item col-3">
-                <img src="img/problem-solving.png" alt="การแก้ไขปัญหา">
-                <p>การแก้ไขปัญหา</p>
-            </a>
-            <a href="error.html" class="nav-item col-3">
-                <img src="img/service-area.png" alt="พื้นที่ให้บริการ">
-                <p>พื้นที่ให้บริการ</p>
-            </a>
-        </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
