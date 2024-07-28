@@ -62,6 +62,11 @@ label {
   overflow-y: auto; /* Ensure main content is scrollable */
   padding: 48px 48px 0px 48px;
 }
+#main-content-login {
+  background-color: #fff; /* Added white background for the main content */
+  overflow-y: auto; /* Ensure main content is scrollable */
+  padding: 70px 100px 0px 100px;
+}
 
 .icon-nt {
   max-height: 64px;
@@ -134,7 +139,7 @@ label {
 }
 
 .box-content {
-  width: 60%;
+  width: 80%;
   font-size: 22px;
   line-height: 1;
   text-align: left;
@@ -350,6 +355,9 @@ hr {
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
   }
+  #main-content-login {
+    padding: 20px 24px 0px 24px;
+  }
 
   .top-bar {
     flex-direction: column;
@@ -363,9 +371,7 @@ hr {
   }
 
 
-  .main-content {
-    padding-top: 20px;
-  }
+
 
   .promo.mobile {
     margin-bottom: 116px !important;
@@ -400,4 +406,8 @@ hr {
   .promo-mb {
     margin-bottom: 116px !important;
   }
+  .bottom-nav .nav-item {
+    margin-inline: 7px;
+  }
+  
 }
