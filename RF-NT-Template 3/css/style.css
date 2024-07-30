@@ -50,6 +50,10 @@ body {
   padding-bottom: 10px;
 }
 
+.top-bar.login {
+  max-width: 91.666667%;
+}
+
 /* Promo banner */
 .promo-banner {
   margin-top: 10px;
@@ -94,7 +98,6 @@ body {
 
 .main-content-card-login-wrapper {
   margin-right: 80px;
-  margin-top: -150px;
 }
 
 .banner-image {
@@ -420,9 +423,6 @@ hr {
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
-  .promo-wrapper {
-    padding: 0px 24px 0px 24px;
-  }
   .top-wrapper {
     padding: 12px 24px 20px 24px;
   }
@@ -442,8 +442,16 @@ hr {
 
   .top-bar {
     flex-direction: row;
-    gap: 20px;
     padding-bottom: 0px;
+  }
+
+  .top-wrapper {
+    gap: 20px;
+  }
+
+  .top-bar.login {
+    max-width: none;
+    width: 100%;
   }
 
   .language-dropdown {

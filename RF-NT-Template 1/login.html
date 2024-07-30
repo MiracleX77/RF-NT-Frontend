@@ -42,41 +42,34 @@
     <div class="wrapper d-flex flex-column min-vh-100">
         <!-- Top Bar -->
         <div class="top-bar-login bg-top-bar">
-            <div class="d-flex justify-content-between align-items-start top-wrapper">
-                <div class="col-6 col-md-10" style="padding-right: 10px;">
-                    <div class="d-block d-md-none col-12 col-md-auto px-0">
-                        <img src="img/NT1.png" alt="Icon" class="icon-top-left" style="padding-bottom: 20px;">
-                        <img src="img/NT2.png" alt="Icon" class="icon-top-left">
+            <div class="d-flex justify-content-between align-items-start p-3 top-wrapper">
+                <div class="d-flex flex-column flex-md-row col-6 col-md-auto px-0">
+                    <img src="img/NT1.png" alt="Icon" class="icon-top-left" style="padding-bottom: 20px;">
+                    <img src="img/NT2.png" alt="Icon" class="icon-top-left" style="padding-bottom: 20px;">
+                </div>
+                <div class="custom-dropdown language-dropdown align-self-start col-6 col-md-1 px-0">
+                    <button class="btn btn-light custom-dropdown-toggle" type="button" id="languageDropdown">
+                        <img class="mr-3" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
+                        <span class="dropdown-arrow">&#9662;</span>
+                    </button>
+                    <div class="custom-dropdown-menu" id="languageDropdownMenu">
+                        <a class="dropdown-item" href="#" data-value="ไทย" data-flag="img/flag-th.png">
+                            <img src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
+                        </a>
+                        <a class="dropdown-item" href="#" data-value="English" data-flag="img/flag-us.png">
+                            <img src="img/flag-us.png" alt="US Flag" width="20" height="15"> English
+                        </a>
+                        <a class="dropdown-item" href="#" data-value="日本語" data-flag="img/flag-jp.png">
+                            <img src="img/flag-jp.png" alt="Japan Flag" width="20" height="15"> 日本語
+                        </a>
+                        <a class="dropdown-item" href="#" data-value="한국어" data-flag="img/flag-kr.png">
+                            <img src="img/flag-kr.png" alt="Korea Flag" width="20" height="15"> 한국어
+                        </a>
+                        <a class="dropdown-item" href="#" data-value="中国的" data-flag="img/flag-cn.png">
+                            <img src="img/flag-cn.png" alt="China Flag" width="20" height="15"> 中国的
+                        </a>
                     </div>
                 </div>
-                <div class="col-6 col-md-2 pr-60-dt" style="padding-left: 10px;">
-                    <div class="custom-dropdown language-dropdown" style="padding-left: 0px; padding-right: 0px;">
-                        <button class="btn btn-light custom-dropdown-toggle" type="button" id="languageDropdown">
-                            <img class="mr-3" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
-                            <span class="dropdown-arrow">&#9662;</span>
-                        </button>
-                        <div class="custom-dropdown-menu" id="languageDropdownMenu">
-                            <a class="dropdown-item" href="#" data-value="ไทย" data-flag="img/flag-th.png">
-                                <img src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
-                            </a>
-                            <a class="dropdown-item" href="#" data-value="English" data-flag="img/flag-us.png">
-                                <img src="img/flag-us.png" alt="US Flag" width="20" height="15"> English
-                            </a>
-                            <a class="dropdown-item" href="#" data-value="日本語" data-flag="img/flag-jp.png">
-                                <img src="img/flag-jp.png" alt="Japan Flag" width="20" height="15"> 日本語
-                            </a>
-                            <a class="dropdown-item" href="#" data-value="한국어" data-flag="img/flag-kr.png">
-                                <img src="img/flag-kr.png" alt="Korea Flag" width="20" height="15"> 한국어
-                            </a>
-                            <a class="dropdown-item" href="#" data-value="中国的" data-flag="img/flag-cn.png">
-                                <img src="img/flag-cn.png" alt="China Flag" width="20" height="15"> 中国的
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center promo-wrapper d-md-none">
-                <img src="img/promo.png" alt="Promotion Banner" class="img-fluid promo-image">
             </div>
         </div>
         <div
@@ -91,11 +84,8 @@
                     <!-- Main Content Card -->
                     <div class="flex-grow-1 d-flex flex-column justify-content-center align-items-center">
                         <div class="main-content-card-login mx-auto">
-                            <div class="d-none d-md-flex col-12 col-md-auto px-0 mb-5">
-                                <img src="img/NT1.png" alt="Icon" class="icon-top-left col-6 px-0"
-                                    style="padding-right: 10px !important;">
-                                <img src="img/NT2.png" alt="Icon" class="icon-top-left col-6 px-0"
-                                    style="padding-left: 10px !important;">
+                            <div class="text-center promo-wrapper">
+                                <img src="img/promo.png" alt="Promotion Banner" class="img-fluid promo-image">
                             </div>
                             <!-- Form Content Start -->
                             <form onsubmit="return login(event)">
@@ -167,9 +157,9 @@
                             </form>
                             <!-- Form Content End -->
                             <!-- Promo2 Banner -->
-                            <div class="promo2-mobile-wrapper d-md-none mt-3 mb-100">
+                            <div class="promo2-mobile-wrapper mt-3 mb-100">
                                 <div class="promo2-mobile text-center">
-                                    <img src="img/promo2.png" alt="Promotion Banner" class="img-fluid promo2-image">
+                                    <img src="img/promo2.png" alt="Promotion Banner" class="img-fluid promo2-image w-100">
                                 </div>
                             </div>
                         </div>
@@ -203,9 +193,6 @@
             <div class="col-md-6 d-none d-md-flex justify-content-center pr-60-dt">
                 <div class="d-flex flex-column banner-content-right-login">
                     <img src="img/banner.png" alt="Banner" class="banner-image">
-                    <div class="promo2-login align-self-end">
-                        <img src="img/promo2.png" alt="Promotion Banner" class="img-fluid promo2-image">
-                    </div>
                 </div>
             </div>
         </div>

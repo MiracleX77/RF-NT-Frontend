@@ -97,7 +97,6 @@ body {
   margin-top: 0;
   padding: 24px 40px;
   margin: 0 auto;
-  margin-bottom: 1rem;
   max-width: 900px;
 }
 
@@ -456,10 +455,6 @@ hr {
   display: none;
 }
 
-.mb-100 {
-  margin-bottom: 116px;
-}
-
 .form-group {
   margin-bottom: 20px;
 }
@@ -470,8 +465,8 @@ hr {
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
-  .promo-wrapper {
-    display: none;
+  .mb-100 {
+    margin-bottom: 116px;
   }
 
   .promo-wrapper-mobile{
@@ -484,6 +479,7 @@ hr {
 
   .top-wrapper {
     padding: 12px 24px 20px 24px;
+    gap: 20px;
   }
 
   .top-wrapper .col-6 {
