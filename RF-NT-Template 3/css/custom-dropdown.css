@@ -7,7 +7,7 @@
 .custom-dropdown-toggle {
   background-color: white;
   border: 0px solid #dedede;
-  border-radius: 25px;
+  border-radius: 8px;
   color: #53595f;
   font-size: 16px;
   width: 100%;
@@ -57,7 +57,7 @@
 }
 
 .custom-dropdown-menu a:hover:not(.disabled) {
-  background-color: #fcc353;
+  background-color: #BE79E8;
   color: white;
 }
 
@@ -70,7 +70,7 @@
 .custom-dropdown-search {
   width: calc(100% - 2rem);
   margin: 0.5rem 1rem;
-  border-radius: 25px;
+  border-radius: 8px;
 }
 
 .dropdown-arrow {

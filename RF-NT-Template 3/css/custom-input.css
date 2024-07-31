@@ -53,8 +53,8 @@
 }
 
 .custom-checkbox:checked {
-    background-color: #FCC353;
-    border-color: #FCC353;
+    background-color: #BE79E8;
+    border-color: #BE79E8;
 }
 
 .custom-checkbox:checked::after {
