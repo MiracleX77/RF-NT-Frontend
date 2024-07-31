@@ -190,7 +190,7 @@ label {
   background-color: transparent;
   color: white;
   border: 0px;
-  font-size: 18px;
+  font-size: 18px !important;
   height: 60px !important;
   display: flex;
   align-items: center;
@@ -560,7 +560,7 @@ hr {
     background-color: transparent;
     color: white;
     border: 0px;
-    font-size: 12px;
+    font-size: 12px !important;
     text-align: left;
     height: 50px !important;
   }

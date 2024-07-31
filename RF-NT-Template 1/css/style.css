@@ -268,7 +268,7 @@ label {
   background-color: transparent;
   color: #53595f;
   border: 0px;
-  font-size: 18px;
+  font-size: 18px !important;
   text-align: left;
   height: 60px !important;
 }
@@ -617,7 +617,7 @@ hr {
     background-color: transparent;
     color: #53595f;
     border: 0px;
-    font-size: 12px;
+    font-size: 12px !important;
     text-align: left;
   }
 
