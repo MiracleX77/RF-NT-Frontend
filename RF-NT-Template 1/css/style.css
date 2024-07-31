@@ -487,12 +487,17 @@ hr {
     padding-right: 0px;
   }
 
+  .bg-mobile-image {
+    padding: 0px 24px 0px 24px;
+  }
+
   .promo {
     margin-top: 0px;
   }
 
   .promo-image {
     width: 100%;
+    padding: 0px 24px 0px 24px;
   }
 
   .top-bar {
