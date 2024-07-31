@@ -57,12 +57,12 @@
 }
 
 .custom-dropdown-menu a:hover:not(.disabled) {
-  background-color: #fcc353;
+  background-color: #236DDC;
   color: white;
 }
 
 .custom-dropdown-menu a.disabled {
-  background-color: #f5f6f8;
+  background-color: #3F3F3F;
   color: #a3a3a3;
   pointer-events: none;
 }
