@@ -13,7 +13,7 @@
 html,
 body {
   font-family: "IBM Plex Sans Thai", sans-serif;
-  background-color: #fef8f8;
+  /* background-color: #fef8f8; */
   margin: 0;
   padding: 0;
   min-height: 100vh;
