@@ -26,6 +26,15 @@ body {
   line-height: auto;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 .promo {
   margin-bottom: 20px;
 }
@@ -54,16 +63,17 @@ label {
 }
 
 #left-banner {
-  background-color: #f8f9fa; /* Light background for left banner */
+  background-color: transparent; /* Light background for left banner */
+  margin-top: 200px;
 }
 
 #main-content {
-  background-color: #fff; /* Added white background for the main content */
+  background-color: rgba(255, 255, 255, 0.8); /* Added white background for the main content */
   overflow-y: auto; /* Ensure main content is scrollable */
   padding: 48px 48px 0px 48px;
 }
 #main-content-login {
-  background-color: #fff; /* Added white background for the main content */
+  background-color: rgba(255, 255, 255, 0.8); /* Added white background for the main content */
   overflow-y: auto; /* Ensure main content is scrollable */
   padding: 70px 100px 0px 100px;
 }
@@ -87,7 +97,7 @@ label {
 }
 
 .main-container {
-  height: 100vh;
+  min-height: 100vh;
   margin-top: -150px;
 }
 
@@ -120,6 +130,7 @@ label {
 }
 
 .content-body {
+  width: 450px;
   margin-left: 40px;
   margin-right: 40px;
   font-size: 22px;
@@ -139,12 +150,10 @@ label {
 }
 
 .box-content {
-  width: 80%;
+  width: 450px;
   font-size: 22px;
   line-height: 1;
   text-align: left;
-  padding-left: 20px;
-  padding-right: 20px;
   border-radius: 5px;
 }
 
@@ -261,6 +270,7 @@ button.btn.btn-link.accordion-button:hover {
 
 .accordion .card {
   border: 0 !important;
+  background-color: transparent;
 }
 
 .card-header {
@@ -386,6 +396,7 @@ hr {
     left: 0;
     width: 100%;
     flex-direction: row;
+    background-color: #ffffff;
     justify-content: space-between;
   }
 
