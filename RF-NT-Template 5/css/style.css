@@ -15,7 +15,7 @@
 html,
 body {
   font-family: "NT", sans-serif;
-  color: white;
+  color: black;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-  color: white;
+  color: black;
 }
 
 .wrapper {
@@ -62,14 +62,14 @@ h1 {
 
 h1 {
   font-size: 26px;
-  color: #665ae1;
+  color: black;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 p {
   font-size: 22px;
-  color: white;
+  color: black;
   font-weight: 400;
   line-height: 26.4px;
 }
@@ -78,7 +78,7 @@ label {
   font-family: "NT", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: white;
+  color: black;
 }
 
 .icon-top-left {
@@ -107,6 +107,7 @@ label {
 .bottom-nav .nav-button-group {
   display: flex;
   justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
   max-width: 450px;
   border-top: 2px solid #53595f;
@@ -128,7 +129,7 @@ label {
 .bottom-nav .nav-item p {
   margin: 0;
   font-size: 16px;
-  color: #ffffff;
+  color: black;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -144,6 +145,7 @@ label {
 
 .main-content-card {
   /* background-color: #ffffff; */
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   padding: 24px 100px;
   margin: 0 auto;
@@ -153,6 +155,7 @@ label {
 
 .main-content-card-fit {
   /* background-color: #ffffff; */
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   padding: 24px 100px;
   margin: 0 auto;
@@ -162,6 +165,7 @@ label {
 
 .main-content-card-wide {
     /* background-color: #ffffff; */
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     padding: 24px 100px;
     margin: 0 auto;
@@ -170,6 +174,8 @@ label {
   }
 
 .main-content-card-login {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 24px;
   border-radius: 8px;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -178,6 +184,8 @@ label {
 
 .main-content-card-register {
   border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 24px;
   margin: 0 auto;
   margin-bottom: 1rem;
   max-width: 650px;
@@ -193,7 +201,7 @@ label {
 
 .button-extra {
   background-color: transparent;
-  color: white;
+  color: black;
   border: 0px;
   font-size: 18px !important;
   height: 60px !important;
@@ -261,7 +269,7 @@ label {
 .btn-custom-primary {
   background-color: #f4a022;
   border-radius: 25px;
-  color: white;
+  color: black;
   border: 1px solid #f4a022;
   width: 100%;
 }
@@ -281,11 +289,11 @@ label {
 
 .btn-custom-outline:hover {
   background-color: #f4a022;
-  color: white;
+  color: black;
 }
 .btn-custom-outline.active {
   background-color: #f4a022;
-  color: white;
+  color: black;
   border: 1px solid #f4a022;
 }
 .box-row {
@@ -300,7 +308,7 @@ label {
   padding-left: 20px;
   padding-top: 5px;
 
-  color: white;
+  color: black;
   text-align: left;
   font-size: 20px;
   width: 100%;
@@ -390,7 +398,7 @@ button.btn.btn-link.accordion-button:focus {
   border-radius: 0px !important;
 }
 .accordion-button2.collapsed {
-  color: white;
+  color: black;
   border-bottom: 2px solid #53595f;
   text-decoration: none;
 }
@@ -465,6 +473,7 @@ hr {
 
   .bottom-nav .nav-button-group {
     flex-direction: row;
+    background-color: transparent;
     gap: 10px;
     padding: 10px;
     width: 100%;
@@ -525,7 +534,7 @@ hr {
 
   .main-content-card-login {
     width: 90%;
-    padding: 0px 12px 24px 12px;
+    padding: 24px;
     margin-top: 0px !important;
   }
 
@@ -563,7 +572,7 @@ hr {
 
   .button-extra {
     background-color: transparent;
-    color: white;
+    color: black;
     border: 0px;
     font-size: 12px !important;
     text-align: left;

@@ -23,6 +23,9 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
 }
 
@@ -31,7 +34,7 @@ body {
 }
 
 .bg-main-content-login {
-  background-color: #dfb6f8;
+  background-color: #dfb6f880;
   border-bottom-right-radius: 60px;
   margin-left: 0px !important;
 }
@@ -42,7 +45,7 @@ body {
 
 /* Top bar styles */
 .top-bar {
-  background-color: #dfb6f8;
+  background-color: #dfb6f880;
   border-radius: 0;
   width: 100%;
   max-width: 900px;
@@ -52,6 +55,10 @@ body {
 
 .top-bar.login {
   max-width: 91.666667%;
+}
+
+.form-login {
+  width: 450px;
 }
 
 /* Promo banner */
@@ -66,7 +73,7 @@ body {
 
 /* Main content card styles */
 .main-content-card {
-  background-color: #dfb6f8;
+  background-color: #dfb6f880;
   border-bottom-right-radius: 60px;
   margin-top: 0;
   padding: 24px 100px;
@@ -87,7 +94,7 @@ body {
 }
 
 .main-content-card-login {
-  background-color: #dfb6f8;
+  background-color: transparent;
   border-bottom-right-radius: 60px;
   margin-top: 0;
   padding: 24px 40px;
@@ -205,6 +212,7 @@ label {
 .bottom-nav .nav-button-group {
   display: flex;
   justify-content: space-around;
+  background-color: #dfb6f880;
   width: 100%;
   max-width: 450px;
   padding-block: 12px;
@@ -455,6 +463,14 @@ hr {
     width: 100%;
   }
 
+  .bg-banner {
+    background-color: #dfb6f880;
+  }
+
+  .form-login {
+    width: auto;
+  }
+
   .language-dropdown {
     width: 50%;
     display: flex;
@@ -463,7 +479,7 @@ hr {
   }
 
   .bottom-nav {
-    background-color: #dfb6f8;
+    background-color: #dfb6f880;
     position: fixed;
     border-top-left-radius: 60px;
     bottom: 0;
@@ -474,6 +490,7 @@ hr {
 
   .bottom-nav .nav-button-group {
     flex-direction: row;
+    background-color: transparent;
     padding: 10px;
     width: 100%;
     height: 100px;
@@ -526,12 +543,12 @@ hr {
   }
 
   .main-content-right-mobile {
-    background-color: #dfb6f8;
+    background-color: #dfb6f880;
     padding-inline: 0px !important;
   }
 
   .main-content-mobile-radius {
-    background-color: #dfb6f8;
+    background-color: #dfb6f880;
     height: 40px;
     max-height: 40px;
     border-bottom-right-radius: 60px;

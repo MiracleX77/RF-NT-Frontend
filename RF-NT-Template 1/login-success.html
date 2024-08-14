@@ -11,105 +11,110 @@
     <link rel="stylesheet" href="css/custom-dropdown.css">
 </head>
 
-<body style="background-image: url(./img/background.png);">
-    <div class="wrapper d-flex flex-column min-vh-100">
-        <div class="container-fluid p-0 d-flex flex-column flex-grow-1">
-            <!-- Top Bar -->
-            <div class="top-bar bg-top-bar mx-auto">
-                <div class="d-flex justify-content-between align-items-start top-wrapper">
-                    <div class="col-6 col-md-10 pr-10-mobile">
-                        <div class="d-block d-md-flex col-12 col-md-auto px-0" style="gap: 20px">
-                            <img src="img/NT1.png" alt="Icon" class="icon-top-left pb-20-mobile">
-                            <img src="img/NT2.png" alt="Icon" class="icon-top-left">
+<body>
+    <div style="height: 100%;">
+        <div class="wrapper d-flex flex-column min-vh-100" style="background-image: url(./img/background.png);">
+            <div class="container-fluid p-0 d-flex flex-column flex-grow-1">
+                <!-- Top Bar -->
+                <div class="top-bar bg-top-bar mx-auto">
+                    <div class="d-flex justify-content-between align-items-start top-wrapper">
+                        <div class="col-6 col-md-10 pr-10-mobile">
+                            <div class="d-block d-md-flex col-12 col-md-auto px-0" style="gap: 20px">
+                                <img src="img/NT1.png" alt="Icon" class="icon-top-left pb-20-mobile">
+                                <img src="img/NT2.png" alt="Icon" class="icon-top-left">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2 pl-10-mobile">
+                            <div class="custom-dropdown language-dropdown">
+                                <button class="btn btn-light custom-dropdown-toggle" type="button"
+                                    id="languageDropdown">
+                                    <img class="mr-3" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
+                                    <span class="dropdown-arrow">&#9662;</span>
+                                </button>
+                                <div class="custom-dropdown-menu" id="languageDropdownMenu">
+                                    <a class="dropdown-item" href="#" data-value="ไทย" data-flag="img/flag-th.png"><img
+                                            src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย</a>
+                                    <a class="dropdown-item" href="#" data-value="English"
+                                        data-flag="img/flag-us.png"><img src="img/flag-us.png" alt="US Flag" width="20"
+                                            height="15"> English</a>
+                                    <a class="dropdown-item" href="#" data-value="日本語" data-flag="img/flag-jp.png"><img
+                                            src="img/flag-jp.png" alt="Japan Flag" width="20" height="15"> 日本語</a>
+                                    <a class="dropdown-item" href="#" data-value="한국어" data-flag="img/flag-kr.png"><img
+                                            src="img/flag-kr.png" alt="Korea Flag" width="20" height="15"> 한국어</a>
+                                    <a class="dropdown-item" href="#" data-value="中国的" data-flag="img/flag-cn.png"><img
+                                            src="img/flag-cn.png" alt="China Flag" width="20" height="15"> 中国的</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-2 pl-10-mobile">
-                        <div class="custom-dropdown language-dropdown">
-                            <button class="btn btn-light custom-dropdown-toggle" type="button" id="languageDropdown">
-                                <img class="mr-3" src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย
-                                <span class="dropdown-arrow">&#9662;</span>
-                            </button>
-                            <div class="custom-dropdown-menu" id="languageDropdownMenu">
-                                <a class="dropdown-item" href="#" data-value="ไทย" data-flag="img/flag-th.png"><img
-                                        src="img/flag-th.png" alt="Thai Flag" width="20" height="15"> ไทย</a>
-                                <a class="dropdown-item" href="#" data-value="English" data-flag="img/flag-us.png"><img
-                                        src="img/flag-us.png" alt="US Flag" width="20" height="15"> English</a>
-                                <a class="dropdown-item" href="#" data-value="日本語" data-flag="img/flag-jp.png"><img
-                                        src="img/flag-jp.png" alt="Japan Flag" width="20" height="15"> 日本語</a>
-                                <a class="dropdown-item" href="#" data-value="한국어" data-flag="img/flag-kr.png"><img
-                                        src="img/flag-kr.png" alt="Korea Flag" width="20" height="15"> 한국어</a>
-                                <a class="dropdown-item" href="#" data-value="中国的" data-flag="img/flag-cn.png"><img
-                                        src="img/flag-cn.png" alt="China Flag" width="20" height="15"> 中国的</a>
+                    <div class="text-center top-bg-wrapper-mobile">
+                        <img src="img/BG-mobile.png" alt="Promotion Banner" class="img-fluid bg-mobile-image">
+                    </div>
+                    <div class="text-center promo-wrapper px-0">
+                        <img src="img/promo.png" alt="Promotion Banner" class="img-fluid promo-image">
+                    </div>
+                </div>
+
+                <!-- Main Content Card -->
+
+                <div class="main-content-mobile-radius d-md-none"></div>
+                <div class="main-content-card mx-auto mt-0 bg-main-content-card">
+
+                    <div class="content-wrapper mx-auto">
+                        <h1 class="text-center font-weight-bold" style="color: #53595F;">เข้าสู่ระบบสำเร็จ</h1>
+
+                        <!-- Form Content Start -->
+                        <div class="text-center">
+                            <p class="welcome-text text-center" style="margin-bottom: 40px;">ขอต้อนรับสู่ NT-Wi-Fi</p>
+
+                            <div class="d-flex flex-column align-items-center pt-3">
+                                <button type="button" onclick="window.location.href=''"
+                                    class="btn btn-primary col-12 col-md-5 mb-3"
+                                    style="background-color: #FFE800; border-color: #FFE800; color: #53595F;">ใช้อินเทอร์เน็ต</button>
+                                <button type="button" onclick="window.location.href='logout-success.html'"
+                                    class="btn btn-secondary col-12 col-md-5 d-flex align-items-center justify-content-center"
+                                    style="background-color: #53595F; border-color: #53595F;">
+                                    <img src="img/logout.png" alt="Logout Icon"
+                                        style="width: 30px; margin-right: 10px;">
+                                    ออกจากระบบ
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Form Content End -->
+                    </div>
+                    <!-- Promo2 Banner -->
+                    <div class="promo2-wrapper justify-content-center d-flex mt-3 ">
+                        <div class="mt-auto col-12 col-md-5 px-0 ">
+                            <div class="promo2 text-center">
+                                <img src="img/promo2.png" alt="Promotion Banner" class="img-fluid promo2-image">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center top-bg-wrapper-mobile">
-                    <img src="img/BG-mobile.png" alt="Promotion Banner" class="img-fluid bg-mobile-image">
-                </div>
-                <div class="text-center promo-wrapper px-0">
-                    <img src="img/promo.png" alt="Promotion Banner" class="img-fluid promo-image">
-                </div>
+                <!-- New Div for extending the background color -->
+                <div class="extend-background flex-grow-1"></div>
             </div>
 
-            <!-- Main Content Card -->
-             
-            <div class="main-content-mobile-radius d-md-none"></div>
-            <div class="main-content-card mx-auto mt-0 bg-main-content-card">
-                
-                <div class="content-wrapper mx-auto">
-                    <h1 class="text-center font-weight-bold" style="color: #53595F;">เข้าสู่ระบบสำเร็จ</h1>
-
-                    <!-- Form Content Start -->
-                    <div class="text-center">
-                        <p class="welcome-text text-center" style="margin-bottom: 40px;">ขอต้อนรับสู่ NT-Wi-Fi</p>
-
-                        <div class="d-flex flex-column align-items-center pt-3">
-                            <button type="button" onclick="window.location.href=''"
-                                class="btn btn-primary col-12 col-md-5 mb-3"
-                                style="background-color: #FFE800; border-color: #FFE800; color: #53595F;">ใช้อินเทอร์เน็ต</button>
-                            <button type="button" onclick="window.location.href='logout-success.html'"
-                                class="btn btn-secondary col-12 col-md-5 d-flex align-items-center justify-content-center"
-                                style="background-color: #53595F; border-color: #53595F;">
-                                <img src="img/logout.png" alt="Logout Icon" style="width: 30px; margin-right: 10px;">
-                                ออกจากระบบ
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Form Content End -->
+            <!-- Bottom Navigation -->
+            <div class="bottom-nav d-flex justify-content-center align-items-center">
+                <div class="nav-button-group d-flex justify-content-around">
+                    <a href="error.html" class="nav-item">
+                        <img src="img/check-usage.png" alt="ตรวจสอบยอดใช้งาน">
+                        <p>ตรวจสอบยอดใช้งาน</p>
+                    </a>
+                    <a href="howto.html" class="nav-item">
+                        <img src="img/usage-guide.png" alt="วิธีการใช้งาน">
+                        <p>วิธีการใช้งาน</p>
+                    </a>
+                    <a href="troubleshoot.html" class="nav-item">
+                        <img src="img/problem-solving.png" alt="การแก้ไขปัญหา">
+                        <p>การแก้ไขปัญหา</p>
+                    </a>
+                    <a href="error.html" class="nav-item">
+                        <img src="img/service-area.png" alt="พื้นที่ให้บริการ">
+                        <p>พื้นที่ให้บริการ</p>
+                    </a>
                 </div>
-                <!-- Promo2 Banner -->
-                <div class="promo2-wrapper justify-content-center d-flex mt-3 ">
-                    <div class="mt-auto col-12 col-md-5 px-0 ">
-                        <div class="promo2 text-center">
-                            <img src="img/promo2.png" alt="Promotion Banner" class="img-fluid promo2-image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- New Div for extending the background color -->
-            <div class="extend-background flex-grow-1"></div>
-        </div>
-
-        <!-- Bottom Navigation -->
-        <div class="bottom-nav d-flex justify-content-center align-items-center">
-            <div class="nav-button-group d-flex justify-content-around">
-                <a href="error.html" class="nav-item">
-                    <img src="img/check-usage.png" alt="ตรวจสอบยอดใช้งาน">
-                    <p>ตรวจสอบยอดใช้งาน</p>
-                </a>
-                <a href="howto.html" class="nav-item">
-                    <img src="img/usage-guide.png" alt="วิธีการใช้งาน">
-                    <p>วิธีการใช้งาน</p>
-                </a>
-                <a href="troubleshoot.html" class="nav-item">
-                    <img src="img/problem-solving.png" alt="การแก้ไขปัญหา">
-                    <p>การแก้ไขปัญหา</p>
-                </a>
-                <a href="error.html" class="nav-item">
-                    <img src="img/service-area.png" alt="พื้นที่ให้บริการ">
-                    <p>พื้นที่ให้บริการ</p>
-                </a>
             </div>
         </div>
     </div>

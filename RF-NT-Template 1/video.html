@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="css/custom-input.css">
     <link rel="stylesheet" href="css/custom-dropdown.css">
     <style>
-        body, html {
+        body,
+        html {
             background-color: #ffffff;
             height: 100%;
             margin: 0;
-            padding: 0 24px;
             box-sizing: border-box;
         }
+
         .container-fluid {
             min-height: 100%;
             display: flex;
@@ -24,15 +25,18 @@
             justify-content: center;
             align-items: center;
         }
+
         .header {
             text-align: center;
             margin-top: 100px;
             margin-bottom: -200px;
         }
+
         .header img {
             max-width: 100%;
             height: auto;
         }
+
         .header-title {
             font-family: 'IBM Plex Sans Thai';
             color: #FFE800;
@@ -41,6 +45,7 @@
             text-align: center;
             margin-top: 1rem;
         }
+
         .video-container {
             display: flex;
             justify-content: center;
@@ -48,6 +53,7 @@
             flex-grow: 1;
             width: 100%;
         }
+
         .video-frame {
             border: 20px solid #F5F3DD;
             border-radius: 8px;
@@ -56,6 +62,7 @@
             max-width: 700px;
             min-width: 300px;
         }
+
         .video-frame video {
             display: block;
             width: 100%;
@@ -64,18 +71,20 @@
     </style>
 </head>
 
-<body style="background-image: url(./img/background.png);">
-    <div class="container-fluid p-0">
-        <div class="header">
-            <img src="img/logo.png" alt="NT Logo" class="img-fluid">
-            <div class="header-title">NT Free Wi-Fi</div>
-        </div>
-        <div class="video-container">
-            <div class="video-frame">
-                <video controls>
-                    <source src="your-video-file.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+<body>
+    <div style="height: 100%;">
+        <div class="wrapper container-fluid p-0" style="background-image: url(./img/background.png);">
+            <div class="header">
+                <img src="img/logo.png" alt="NT Logo" class="img-fluid">
+                <div class="header-title">NT Free Wi-Fi</div>
+            </div>
+            <div class="video-container">
+                <div class="video-frame">
+                    <video controls>
+                        <source src="your-video-file.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
