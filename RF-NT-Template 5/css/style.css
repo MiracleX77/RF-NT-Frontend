@@ -115,7 +115,9 @@ label {
   max-width: 450px;
   border-top: 2px solid #53595f;
   padding-block: 12px;
-  gap: 40px;
+  padding: 10px;
+  gap: 20px;
+  border-radius: 8px;
 }
 
 .bottom-nav .nav-item {
@@ -150,10 +152,10 @@ label {
   /* background-color: #ffffff; */
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
-  padding: 24px 100px;
+  padding: 24px 10px;
   margin: 0 auto;
   margin-bottom: 1rem;
-  max-width: 650px;
+  max-width: 450px;
 }
 
 .main-content-card-fit {

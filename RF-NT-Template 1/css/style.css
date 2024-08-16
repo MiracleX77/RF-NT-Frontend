@@ -89,9 +89,10 @@ body {
 
 .content-wrapper {
   background-color: #ffffff;
-  width: 100%;
+  width: 80%;
   border-radius: 8px;
   padding: 24px;
+  /* opacity: 0.5; */
 }
 
 .main-content-card-login {

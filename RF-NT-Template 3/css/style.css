@@ -91,6 +91,7 @@ body {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 40px;
   padding: 24px;
+  max-width: 450px;
 }
 
 .main-content-card-login {
@@ -156,7 +157,7 @@ body {
 
 /* Text styles */
 h1 {
-  font-size: 26px;
+  font-size: 22px;
   color: #665ae1;
   margin-bottom: 20px;
   font-weight: 700;
@@ -301,6 +302,15 @@ label {
   height: 40px;
   padding: 10px 10px;
   font-size: 18px;
+}
+
+.btn-custom1 {
+  width: 100%;
+  min-height: 40px !important;
+  border-radius: 8px;
+  height: 40px;
+  padding: 2px 2px;
+  font-size: small;
 }
 
 .btn-custom-primary {
