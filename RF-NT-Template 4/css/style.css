@@ -107,7 +107,7 @@ label {
   justify-content: center;
   align-items: center;
   border-top: 1px solid #ccc;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   background-color: #ffffff;
   width: 100%;
   z-index: 3;
@@ -115,7 +115,7 @@ label {
 
 .bottom-nav .nav-item {
   text-align: center;
-  margin-inline: 10px;
+  margin: 10px;
 }
 
 .bottom-nav .nav-item img {
