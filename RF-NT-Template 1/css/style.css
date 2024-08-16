@@ -99,13 +99,9 @@ body {
   background-color: transparent;
   border-bottom-right-radius: 60px;
   margin-top: 0;
-  padding: 24px 40px;
+  padding: 24px 0px;
   margin: 0 auto;
   max-width: 900px;
-}
-
-.main-content-left-login {
-  padding-left: 135px;
 }
 
 .banner-content-right-login {
@@ -593,6 +589,7 @@ hr {
   }
 
   .main-content-card-login {
+    background-color: #F5F3DD80;
     padding: 0px 24px 0px 24px;
     border-bottom-right-radius: 0px;
     margin-bottom: 0px;
