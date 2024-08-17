@@ -113,7 +113,7 @@ label {
   background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
   max-width: 450px;
-  border-top: 2px solid #53595f;
+  /* border-top: 2px solid #53595f; */
   /* padding-block: 12px;
   padding: 10px;
   gap: 20px; */
