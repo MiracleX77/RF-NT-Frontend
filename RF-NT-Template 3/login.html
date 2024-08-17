@@ -72,8 +72,8 @@
             <div
                 class="container-fluid p-0 flex-grow-1 col-md-11 mx-auto bg-main-content-login d-flex flex-column flex-md-row">
                 <!-- Left Side Banner -->
-                <div class="col-md-6 d-md-flex justify-content-center align-items-center bg-banner">
-                    <img src="img/promo.png" alt="Banner" class="banner-image promo-banner">
+                <div class="col-md-6 d-md-flex justify-content-center align-items-center text-center bg-banner py-3">
+                    <img src="img/promo2.png" alt="Promotion Banner" class="banner-image promo-banner">
                 </div>
                 <!-- Right Side Content -->
                 <div class="col-md-6 d-md-flex flex-column main-content-right-mobile">
@@ -82,6 +82,10 @@
                         <div
                             class="main-content-card-login-wrapper flex-grow-1 d-flex flex-column justify-content-center align-items-center">
                             <div class="main-content-card-login mx-auto">
+
+                                <div class="text-center promo-wrapper">
+                                    <img src="img/promo.png" alt="Promotion Banner" class="img-fluid promo-image px-0">
+                                </div>
                                 <!-- Form Content Start -->
                                 <form class="form-login mt-3" onsubmit="return login(event)">
                                     <div class="form-group">
@@ -138,13 +142,13 @@
                                     <div class="text-center">
                                         <div class="d-flex flex-row justify-content-center w-100">
                                             <button type="button"
-                                                class="btn btn-secondary button-extra col-5 d-flex align-items-center mb-2">
+                                                class="btn btn-secondary button-extra col-5 d-flex align-items-center justify-content-center mb-2">
                                                 <img src="img/shopping.png" alt="Logout Icon"
                                                     style="width: 50px; margin-right: 1rem;">
                                                 ซื้อแพ็กเกจ<br>WiFi
                                             </button>
                                             <button type="button" onclick="window.location.href='register.html'"
-                                                class="btn btn-secondary button-extra col-5 d-flex align-items-center">
+                                                class="btn btn-secondary button-extra col-5 d-flex align-items-center justify-content-center">
                                                 <img src="img/wifi.png" alt="Logout Icon"
                                                     style="width: 50px; margin-right: 1rem;">
                                                 ลงทะเบียน<br>Free WiFi
@@ -155,36 +159,31 @@
                                 <!-- Form Content End -->
                             </div>
                         </div>
+
+                        <!-- Bottom Navigation -->
+                        <div class="bottom-nav d-flex align-items-center">
+                            <div class="nav-button-group d-flex justify-content-around">
+                                <a href="error.html" class="nav-item">
+                                    <img src="img/check-usage.png" alt="ตรวจสอบยอดใช้งาน">
+                                    <p>ตรวจสอบยอดใช้งาน</p>
+                                </a>
+                                <a href="howto.html" class="nav-item">
+                                    <img src="img/usage-guide.png" alt="วิธีการใช้งาน">
+                                    <p>วิธีการใช้งาน</p>
+                                </a>
+                                <a href="troubleshoot.html" class="nav-item">
+                                    <img src="img/problem-solving.png" alt="การแก้ไขปัญหา">
+                                    <p>การแก้ไขปัญหา</p>
+                                </a>
+                                <a href="error.html" class="nav-item">
+                                    <img src="img/service-area.png" alt="พื้นที่ให้บริการ">
+                                    <p>พื้นที่ให้บริการ</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="main-content-mobile-radius d-md-none"></div>
-            </div>
-            <!-- Promo2 Banner -->
-            <div class="promo2-wrapper login">
-                <div class="promo2 login text-center">
-                    <img src="img/promo2.png" alt="Promotion Banner" class="img-fluid promo2-image">
-                </div>
-            </div>
-            <!-- Bottom Navigation -->
-            <div class="bottom-nav d-flex align-items-center">
-                <div class="nav-button-group d-flex justify-content-around">
-                    <a href="error.html" class="nav-item">
-                        <img src="img/check-usage.png" alt="ตรวจสอบยอดใช้งาน">
-                        <p>ตรวจสอบยอดใช้งาน</p>
-                    </a>
-                    <a href="howto.html" class="nav-item">
-                        <img src="img/usage-guide.png" alt="วิธีการใช้งาน">
-                        <p>วิธีการใช้งาน</p>
-                    </a>
-                    <a href="troubleshoot.html" class="nav-item">
-                        <img src="img/problem-solving.png" alt="การแก้ไขปัญหา">
-                        <p>การแก้ไขปัญหา</p>
-                    </a>
-                    <a href="error.html" class="nav-item">
-                        <img src="img/service-area.png" alt="พื้นที่ให้บริการ">
-                        <p>พื้นที่ให้บริการ</p>
-                    </a>
-                </div>
+                <div class="main-content-mobile-radius d-md-none mb-100"></div>
             </div>
         </div>
     </div>

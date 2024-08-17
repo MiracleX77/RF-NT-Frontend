@@ -58,16 +58,19 @@ body {
 }
 
 .form-login {
-  width: 450px;
+  max-width: 450px;
 }
 
 /* Promo banner */
 .promo-banner {
-  margin-top: 10px;
+  /* margin-top: 10px; */
+}
+
+.promo-wrapper {
+  /* max-width: 450px; */
 }
 
 .promo-image {
-  max-width: 450px; /* Limit the size of promo.png */
   margin-bottom: 1rem;
 }
 
@@ -98,14 +101,18 @@ body {
   background-color: transparent;
   border-bottom-right-radius: 60px;
   margin-top: 0;
-  padding: 24px 40px;
   margin: 0 auto;
   margin-bottom: 1rem;
-  max-width: 900px;
+  width: 100%;
+  max-width: 450px;
 }
 
 .main-content-card-login-wrapper {
-  margin-right: 80px;
+  /* margin-right: 80px; */
+}
+
+.nav-button-group-login{
+  gap: 20px;
 }
 
 .banner-image {
@@ -213,10 +220,11 @@ label {
 .bottom-nav .nav-button-group {
   display: flex;
   justify-content: space-around;
-  background-color: #dfb6f880;
+  background-color: transparent;
   width: 100%;
   max-width: 450px;
   /* padding-block: 12px; */
+  padding-left: 12px;
 }
 
 .bottom-nav .nav-item {
@@ -440,7 +448,11 @@ hr {
 }
 
 /* Media queries for responsive design */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .mb-100 {
+    margin-bottom: 100px;
+  }
+
   .top-wrapper {
     padding: 12px 24px 20px 24px;
   }
@@ -473,8 +485,18 @@ hr {
     width: 100%;
   }
 
+  .container-fluid {
+    flex-direction: column-reverse;
+  }
+
   .bg-banner {
     background-color: #dfb6f880;
+    order: 2;
+    padding: 0px 24px 0px 24px;
+  }
+
+  .main-content-right-mobile {
+    order: 1;
   }
 
   .form-login {
@@ -562,6 +584,7 @@ hr {
     height: 40px;
     max-height: 40px;
     border-bottom-right-radius: 60px;
+    order: 3;
   }
 
   .main-content-card-login {
