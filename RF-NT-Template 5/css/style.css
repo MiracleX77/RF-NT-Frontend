@@ -39,6 +39,10 @@ h1 {
   min-height: 100vh;
 }
 
+.logo-wrapper {
+  height: 140px;
+}
+
 .container-fluid {
   flex-grow: 1;
 }
