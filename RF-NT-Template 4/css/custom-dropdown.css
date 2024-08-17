@@ -16,6 +16,7 @@
     align-items: center;
     padding-inline: 20px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .custom-dropdown-toggle:hover,
@@ -80,6 +81,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: auto;
 }
 
 .language-dropdown .custom-dropdown-toggle img {

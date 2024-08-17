@@ -139,6 +139,7 @@ label {
   line-height: 0.9;
   justify-content: center;
   align-items: center;
+  padding: 20px 24px 20px 24px;
 }
 
 .main-content {
@@ -353,6 +354,11 @@ hr {
 
 .pb-20 {
   padding-bottom: 20px !important;
+}
+
+.form-group {
+  margin-bottom: 0px;
+  width: 100%;
 }
 
 /* Media queries for responsive design */

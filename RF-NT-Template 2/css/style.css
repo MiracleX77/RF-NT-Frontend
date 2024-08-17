@@ -416,6 +416,11 @@ hr {
     padding-bottom: 20px !important;
 }
 
+.form-group {
+    margin-bottom: 0px;
+    width: 100%;
+}
+
 /* Media queries for responsive design */
 @media (max-width: 1090px) {
     .promo{

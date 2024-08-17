@@ -62,14 +62,14 @@
 
                                 <div class="content-wrapper-no-bg">
                                     <h1 class="text-center font-weight-bold" style="color: #53595F;">ลงทะเบียน</h1>
-            
+
                                     <!-- Form Content Start -->
                                     <form onsubmit="return register(event)">
                                         <div class="form-row">
-                                            <div class="form-group col-12 col-md-6">
+                                            <div class="form-group col-12">
                                                 <div class="custom-dropdown">
-                                                    <button class="btn btn-secondary custom-dropdown-toggle" type="button"
-                                                        id="titleDropdown">
+                                                    <button class="btn btn-secondary custom-dropdown-toggle"
+                                                        type="button" id="titleDropdown">
                                                         คำนำหน้าชื่อ
                                                         <span class="dropdown-arrow">&#9662;</span>
                                                     </button>
@@ -80,10 +80,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group col-12 col-md-6">
+                                            <div class="form-group col-12">
                                                 <div class="custom-dropdown">
-                                                    <button class="btn btn-secondary custom-dropdown-toggle" type="button"
-                                                        id="genderDropdown">
+                                                    <button class="btn btn-secondary custom-dropdown-toggle"
+                                                        type="button" id="genderDropdown">
                                                         เพศ
                                                         <span class="dropdown-arrow">&#9662;</span>
                                                     </button>
@@ -94,41 +94,34 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form-row">
                                             <div class="form-group col-12">
                                                 <input type="text" id="full-name" class="form-control custom-input"
                                                     placeholder="ชื่อ - นามสกุล">
                                             </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-12 col-md-6">
+                                            <div class="form-group col-12">
                                                 <input type="number" id="id-number" class="form-control custom-input"
                                                     placeholder="เลขประจำตัวประชาชน 13 หลัก">
                                             </div>
-                                            <div class="form-group col-12 col-md-6">
-                                                <input type="number" id="passport-number" class="form-control custom-input"
-                                                    placeholder="เลขหนังสือเดินทาง">
+                                            <div class="form-group col-12">
+                                                <input type="number" id="passport-number"
+                                                    class="form-control custom-input" placeholder="เลขหนังสือเดินทาง">
                                             </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-12 col-md-6">
+                                            <div class="form-group col-12">
                                                 <div class="calendar-input">
-                                                    <input type="text" id="birth-date" class="form-control custom-input date-type"
+                                                    <input type="text" id="birth-date"
+                                                        class="form-control custom-input date-type"
                                                         placeholder="วันเกิด" onfocus="(this.type='date')">
                                                     <span class="calendar-icon"></span>
                                                 </div>
                                             </div>
-                                            <div class="form-group col-12 col-md-6">
+                                            <div class="form-group col-12">
                                                 <input type="email" id="email" class="form-control custom-input"
                                                     placeholder="อีเมล์">
                                             </div>
-                                        </div>
-                                        <div class="form-row">
                                             <div class="form-group col-12">
                                                 <div class="custom-dropdown">
-                                                    <button class="btn btn-secondary custom-dropdown-toggle" type="button"
-                                                        id="provinceDropdown">
+                                                    <button class="btn btn-secondary custom-dropdown-toggle"
+                                                        type="button" id="provinceDropdown">
                                                         จังหวัด
                                                         <span class="dropdown-arrow">&#9662;</span>
                                                     </button>
@@ -216,27 +209,24 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-12 col-md-6">
+                                            <div class="form-group col-12">
                                                 <input type="number" id="phone" class="form-control custom-input"
                                                     placeholder="เบอร์มือถือ">
                                             </div>
-                                            <div class="form-group col-7 col-md-4">
+                                            <div class="form-group col-7">
                                                 <button type="button" id="request-otp" class="btn btn-warning w-100"
-                                                    style="height: 40px !important; min-height: 40px !important; color: #fff; background-color: #F4A022; border-color: #F4A022; font-size: 12px;">ขอรับหมายเลข
+                                                    style="height: 40px !important; min-height: 40px !important; color: #fff; background-color: #F4A022; border-color: #F4A022; font-size: 12px; margin-bottom: 20px;">ขอรับหมายเลข
                                                     OTP</button>
                                             </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-12 col-md-6">
+                                            <div class="form-group col-12">
                                                 <input type="text" id="otp" class="form-control custom-input"
                                                     placeholder="หมายเลข OTP">
                                             </div>
                                         </div>
                                         <div class="form-row justify-content-center">
                                             <div class="form-check d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input custom-checkbox" id="accept-terms">
+                                                <input type="checkbox" class="form-check-input custom-checkbox"
+                                                    id="accept-terms">
                                                 <label class="form-check-label ml-2" for="accept-terms"
                                                     style="text-decoration: underline;">
                                                     <a href="term.html"
