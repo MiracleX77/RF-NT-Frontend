@@ -140,3 +140,10 @@
   background-color: #d0d5dd;
   color: white;
 }
+
+@media (min-width: 768px) {
+  .language-dropdown.col-md-1 {
+    flex: 0 0 11%;
+    max-width: 11%;
+  }
+}
