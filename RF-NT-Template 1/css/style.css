@@ -101,7 +101,7 @@ body {
   margin-top: 0;
   padding: 24px 0px;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 450px;
 }
 
 .banner-content-right-login {
@@ -460,7 +460,8 @@ hr {
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  width: 100%;
 }
 
 /* Media queries for responsive design */
