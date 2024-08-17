@@ -446,6 +446,11 @@ hr {
 }
 
 /* Media queries for responsive design */
+@media (max-width: 1090px) {
+  .promo{
+      margin-top: auto;
+  }
+}
 @media (max-width: 768px) {
   .promo {
     margin-top: 0px;
