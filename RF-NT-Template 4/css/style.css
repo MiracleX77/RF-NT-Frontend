@@ -80,8 +80,14 @@ label {
 }
 
 .icon-nt {
-  max-height: 64px;
-  max-width: 332px;
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.promo {
+  max-height: 150px;
+  object-fit: contain;
 }
 
 .top-bar {

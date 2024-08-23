@@ -60,11 +60,15 @@ h1 {
 .promo2 img {
   width: 100%;
   max-width: 450px;
+  max-height: 150px;
+  object-fit: contain;
   height: auto;
 }
 
 .promo2-image {
-  width: 450px;
+  max-width: 450px;
+  max-height: 150px;
+  object-fit: contain;
 }
 
 h1 {
@@ -89,7 +93,9 @@ label {
 }
 
 .icon-top-left {
-  height: auto;
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
   padding-left: 0px;
   padding-right: 0px;
 }
