@@ -120,7 +120,7 @@ body {
 .banner-image {
   width: 100%;
   max-width: 512px;
-  max-height: 512px;
+  max-height: 200px;
   height: auto;
   margin: auto;
   object-fit: contain;
