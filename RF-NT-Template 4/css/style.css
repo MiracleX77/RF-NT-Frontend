@@ -80,13 +80,14 @@ label {
 }
 
 .icon-nt {
-  max-height: 70px;
-  max-width: 100%;
+  max-height: 80px;
+  max-width: 300px;
   object-fit: contain;
 }
 
 .promo {
   max-height: 150px;
+  max-width: 450px;
   object-fit: contain;
 }
 
@@ -117,6 +118,9 @@ label {
   background-color: #ffffff;
   width: 100%;
   z-index: 3;
+  border-radius: 4px;
+  max-width: 450px;
+  align-self: center;
 }
 
 .bottom-nav .nav-item {
@@ -139,13 +143,32 @@ label {
 .content-body {
   background-color: #ccc;
   width: 450px;
-  margin-left: 40px;
-  margin-right: 40px;
   font-size: 22px;
   line-height: 0.9;
   justify-content: center;
   align-items: center;
   padding: 20px 24px 20px 24px;
+}
+
+.body-long-content{
+  max-height: 383px; 
+  overflow-y: auto; 
+  padding-right: 20px; 
+}
+/* Custom Scrollbar */
+.body-long-content::-webkit-scrollbar {
+  width: 15px; /* ความกว้างของ scrollbar */
+}
+
+.body-long-content::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1; /* สีของ thumb */
+  border-radius: 5px; /* มุมโค้งของ thumb */
+  border: 3px solid #f1f1f1; /* ขอบของ thumb */
+}
+
+.body-long-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* สีของ track */
+  border-radius: 5px; /* มุมโค้งของ track */
 }
 
 .main-content {
@@ -410,6 +433,7 @@ hr {
     flex-direction: row;
     background-color: #ffffff;
     justify-content: space-between;
+    max-width: none;
   }
 
   .box-content {

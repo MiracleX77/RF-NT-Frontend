@@ -69,6 +69,10 @@
                                 </div>
                             </div>
                             <div class="form-group col-12">
+                                <input type="text" id="full-name" class="form-control custom-input"
+                                    placeholder="ชื่อ - นามสกุล">
+                            </div>
+                            <div class="form-group col-12">
                                 <div class="custom-dropdown">
                                     <button class="btn btn-secondary custom-dropdown-toggle" type="button"
                                         id="genderDropdown">
@@ -81,28 +85,6 @@
                                         <a class="dropdown-item" href="#">LGBTQ</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group col-12">
-                                <input type="text" id="full-name" class="form-control custom-input"
-                                    placeholder="ชื่อ - นามสกุล">
-                            </div>
-                            <div class="form-group col-12">
-                                <input type="number" id="id-number" class="form-control custom-input"
-                                    placeholder="เลขประจำตัวประชาชน 13 หลัก">
-                            </div>
-                            <div class="form-group col-12">
-                                <input type="number" id="passport-number" class="form-control custom-input"
-                                    placeholder="เลขหนังสือเดินทาง">
-                            </div>
-                            <div class="form-group col-12">
-                                <div class="calendar-input">
-                                    <input type="text" id="birth-date" class="form-control custom-input date-type"
-                                        placeholder="วันเกิด" onfocus="(this.type='date')">
-                                    <span class="calendar-icon"></span>
-                                </div>
-                            </div>
-                            <div class="form-group col-12">
-                                <input type="email" id="email" class="form-control custom-input" placeholder="อีเมล์">
                             </div>
                             <div class="form-group col-12">
                                 <div class="custom-dropdown">
@@ -195,6 +177,24 @@
                                 </div>
                             </div>
                             <div class="form-group col-12">
+                                <input type="number" id="id-number" class="form-control custom-input"
+                                    placeholder="เลขประจำตัวประชาชน 13 หลัก">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="number" id="passport-number" class="form-control custom-input"
+                                    placeholder="เลขหนังสือเดินทาง">
+                            </div>
+                            <!-- <div class="form-group col-12">
+                                <div class="calendar-input">
+                                    <input type="text" id="birth-date" class="form-control custom-input date-type"
+                                        placeholder="วันเกิด" onfocus="(this.type='date')">
+                                    <span class="calendar-icon"></span>
+                                </div>
+                            </div> -->
+                            <div class="form-group col-12">
+                                <input type="email" id="email" class="form-control custom-input" placeholder="อีเมล์">
+                            </div>
+                            <div class="form-group col-12">
                                 <input type="number" id="phone" class="form-control custom-input"
                                     placeholder="เบอร์มือถือ">
                             </div>
@@ -206,6 +206,12 @@
                             </div>
                             <div class="form-group col-12">
                                 <input type="text" id="otp" class="form-control custom-input" placeholder="หมายเลข OTP">
+                            </div>
+                            <div class="form-group col-12">
+                                <button type="button" id="submit-otp" class="btn btn-warning text-white w-100"
+                                    style="border-radius: 25px; background-color: #F4A022; border-color: #F4A022; margin-bottom: 20px;">
+                                    <span style="font-size: small;">ยืนยันรหัส OTP</span>
+                                </button>
                             </div>
                         </div>
                         <div class="form-row justify-content-center">
@@ -219,7 +225,7 @@
                             </div>
                         </div>
                         <div class="form-row justify-content-center pt-3">
-                            <button type="submit" class="btn btn-primary col-12 col-md-6"
+                            <button type="submit" class="btn btn-primary col-12"
                                 style="border-radius: 25px; background-color: #FCC353; border-color: #FCC353;">ลงทะเบียน</button>
                         </div>
                     </form>

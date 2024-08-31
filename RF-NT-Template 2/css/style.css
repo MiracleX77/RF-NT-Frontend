@@ -32,7 +32,7 @@ html, body {
 }
 
 .logo-wrapper {
-    height: 140px;
+    max-height: 180px;
 }
 
 .container-fluid {
@@ -57,6 +57,7 @@ html, body {
 .promo2-image {
     max-width: 450px;
     max-height: 150px;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -82,8 +83,8 @@ label {
 }
 
 .icon-top-left {
-    max-height: 70px;
-    max-width: 100%;
+    max-height: 80px;
+    max-width: 300px;
     object-fit: contain;
     padding-left: 0px;
     padding-right: 0px;
@@ -96,7 +97,6 @@ label {
 }
 
 .bottom-nav {
-    border-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,6 +113,7 @@ label {
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     max-width: 450px;
+    border-radius: 8px;
     /* padding-block: 12px; */
   }
   

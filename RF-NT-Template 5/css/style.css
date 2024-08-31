@@ -40,7 +40,7 @@ h1 {
 }
 
 .logo-wrapper {
-  height: 140px;
+  max-height: 180px;
 }
 
 .container-fluid {
@@ -93,8 +93,8 @@ label {
 }
 
 .icon-top-left {
-  max-height: 70px;
-  max-width: 100%;
+  max-height: 80px;
+  max-width: 300px;
   object-fit: contain;
   padding-left: 0px;
   padding-right: 0px;
@@ -203,7 +203,7 @@ label {
   padding: 24px;
   margin: 0 auto;
   margin-bottom: 1rem;
-  max-width: 650px;
+  max-width: 450px;
 }
 
 .main-content-additional {
