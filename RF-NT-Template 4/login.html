@@ -9,6 +9,28 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom-input.css">
     <link rel="stylesheet" href="css/custom-dropdown.css">
+    <style>
+        .btn-secondary:not(:disabled):not(.disabled).active,
+        .btn-secondary:not(:disabled):not(.disabled):hover,
+        .btn-secondary:not(:disabled):not(.disabled):focus,
+        .btn-secondary:not(:disabled):not(.disabled).active:hover,
+        .btn-secondary:not(:disabled):not(.disabled).active:focus,
+        .btn-secondary:not(:disabled):not(.disabled):focus:hover,
+        .button-extra:not(:disabled):not(.disabled).active,
+        .button-extra:not(:disabled):not(.disabled):hover,
+        .button-extra:not(:disabled):not(.disabled):focus,
+        .button-extra:not(:disabled):not(.disabled).active:hover,
+        .button-extra:not(:disabled):not(.disabled).active:focus,
+        .button-extra:not(:disabled):not(.disabled):focus:hover {
+            background-color: transparent;
+            color: #53595F;
+            border: 0px;
+            font-size: 18px;
+            text-align: left;
+            height: 60px !important;
+            box-shadow: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -100,19 +122,21 @@
                     </div>
 
                     <!-- Additional Links -->
-                    <div class="d-flex flex-column flex-md-row justify-content-center w-100 mt-4">
-                        <button type="button"
-                            class="btn btn-secondary button-extra col-12 col-md-6 d-flex align-items-center justify-content-center mb-2 mb-md-0 mr-md-1"
-                            style="background-color: #ffffff; border-color: #D0D5DD; color: #53595F; padding: 1px;">
-                            <img src="img/shopping.png" alt="Logout Icon" style="width: 30px; margin-right: 10px;">
-                            ซื้อแพ็กเกจ WiFi
-                        </button>
-                        <button type="button" onclick="window.location.href='register.html'"
-                            class="btn btn-secondary button-extra col-12 col-md-6 d-flex align-items-center justify-content-center ml-md-1"
-                            style="background-color: #ffffff; border-color: #D0D5DD; color: #53595F; padding: 1px;">
-                            <img src="img/wifi.png" alt="Logout Icon" style="width: 30px; margin-right: 10px;">
-                            ลงทะเบียน Free WiFi
-                        </button>
+                    <div class="text-center mt-4">
+                        <div class="d-flex flex-row justify-content-center w-100">
+                            <button type="button"
+                                class="btn btn-secondary button-extra col-6 d-flex align-items-center justify-content-center mb-2">
+                                <img src="img/shopping.png" alt="Logout Icon"
+                                    style="width: 40px; margin-right: 1rem;">
+                                ซื้อแพ็กเกจ<br>WiFi
+                            </button>
+                            <button type="button" onclick="window.location.href='register.html'"
+                                class="btn btn-secondary button-extra col-6 d-flex align-items-center justify-content-center">
+                                <img src="img/wifi.png" alt="Logout Icon"
+                                    style="width: 40px; margin-right: 1rem;">
+                                ลงทะเบียน<br>Free WiFi
+                            </button>
+                        </div>
                     </div>
 
                     </div>
