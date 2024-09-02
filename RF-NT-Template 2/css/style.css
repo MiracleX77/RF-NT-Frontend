@@ -88,6 +88,7 @@ label {
     object-fit: contain;
     padding-left: 0px;
     padding-right: 0px;
+    object-position: left;
 }
 
 .language-dropdown .btn-light {
