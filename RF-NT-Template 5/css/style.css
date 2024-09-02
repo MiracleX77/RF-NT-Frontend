@@ -71,6 +71,11 @@ h1 {
   object-fit: contain;
 }
 
+.promo2-mobile {
+  /* display: block; */
+  margin-bottom: 1rem;
+}
+
 h1 {
   font-size: 26px;
   color: black;
@@ -112,7 +117,6 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
   width: 100%;
   z-index: 2;
   /* margin-top: auto;
@@ -122,14 +126,13 @@ label {
 .bottom-nav .nav-button-group {
   display: flex;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
   max-width: 450px;
   /* border-top: 2px solid #53595f; */
   /* padding-block: 12px;
   padding: 10px;
   gap: 20px; */
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .bottom-nav .nav-item {
@@ -161,8 +164,6 @@ label {
 }
 
 .main-content-card {
-  /* background-color: #ffffff; */
-  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   padding: 24px 10px;
   margin: 0 auto;
@@ -171,8 +172,6 @@ label {
 }
 
 .main-content-card-fit {
-  /* background-color: #ffffff; */
-  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   padding: 24px 100px;
   margin: 0 auto;
@@ -181,8 +180,6 @@ label {
 }
 
 .main-content-card-wide {
-    /* background-color: #ffffff; */
-    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     padding: 24px 100px;
     margin: 0 auto;
@@ -191,7 +188,6 @@ label {
   }
 
 .main-content-card-login {
-  background-color: rgba(255, 255, 255, 0.5);
   padding: 24px;
   border-radius: 8px;
   margin: 0 auto;
@@ -201,11 +197,14 @@ label {
 
 .main-content-card-register {
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.5);
   padding: 24px;
   margin: 0 auto;
   margin-bottom: 1rem;
   max-width: 450px;
+}
+
+.bg-color {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .main-content-additional {
@@ -490,7 +489,6 @@ hr {
   }
 
   .bottom-nav {
-    background-color: #3f3f3f;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -500,7 +498,6 @@ hr {
 
   .bottom-nav .nav-button-group {
     flex-direction: row;
-    background-color: transparent;
     gap: 10px;
     /* padding: 10px; */
     width: 100%;
@@ -567,7 +564,7 @@ hr {
 
   .main-content-card-register {
     width: 90%;
-    padding: 0px 12px 24px 12px;
+    padding: 24px 12px 24px 12px;
     margin-top: 0px !important;
   }
 
