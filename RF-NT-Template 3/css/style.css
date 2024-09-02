@@ -196,6 +196,7 @@ label {
   max-width: 300px;
   object-fit: contain;
   object-position: left;
+  margin: 10px;
 }
 
 .language-dropdown .btn-light {

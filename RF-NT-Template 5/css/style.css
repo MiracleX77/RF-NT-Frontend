@@ -99,6 +99,7 @@ label {
   padding-left: 0px;
   padding-right: 0px;
   object-position: left;
+  margin: 10px;
 }
 
 .language-dropdown .btn-light {
