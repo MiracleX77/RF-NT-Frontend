@@ -95,9 +95,7 @@ body {
 
 .content-wrapper {
   background-color: #ffffff;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 40px;
+  border-radius: 40px;
   padding: 24px;
   max-width: 450px;
 }
