@@ -547,7 +547,7 @@ hr {
 
   .bottom-nav .nav-button-group {
     flex-direction: row;
-    background-color: transparent;
+    background-color: unset;
     /* padding: 10px; */
     width: 100%;
     /* height: 100px; */
