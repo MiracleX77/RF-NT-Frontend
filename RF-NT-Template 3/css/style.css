@@ -20,6 +20,10 @@ body {
   overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
+a {
+  color: #53595F;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -462,6 +466,32 @@ hr {
 
 .main-content-right-mobile {
   border-bottom-right-radius: 60px;
+}
+
+.btn-color-primary {
+  background-color: #BE79E8 !important;
+  border-color: #BE79E8 !important;
+}
+
+.btn-color-secondary {
+  background-color: #604766 !important;
+  border-color: #604766 !important;
+}
+
+.btn-thai-id {
+  height: 40px;
+  background-color: #030650 !important;
+  border-color: #030650 !important;
+  font-size: 14px
+}
+
+.btn-otp {
+  height: 40px !important;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #F4A022 !important;
+  border-color: #F4A022 !important;
+  font-size: 12px;
 }
 
 /* Media queries for responsive design */
