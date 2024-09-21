@@ -39,7 +39,7 @@ a {
 }
 
 .bg-color {
-  background-color: #dfb6f880;
+  background-color: #dfb6f880 !important;
 }
 
 .bg-main-content-login {
@@ -555,10 +555,6 @@ hr {
     display: flex;
     flex: auto;
     justify-content: flex-end;
-  }
-
-  .bg-color {
-    background-color: #dfb6f880 !important;
   }
 
   .bg-main-content-login {
